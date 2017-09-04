@@ -642,6 +642,7 @@ a:hover, a:focus {
 .contact {
   text-align: center;
   margin-bottom: 30px;
+  white-space: nowrap;
 }
 
 .contact__text {
@@ -1308,4 +1309,21 @@ a:hover, a:focus {
 .copyright__img {
   display: block;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 760px) {
+  .footer__logo {
+    margin-bottom: 0;
+  }
+  .footer__contact {
+    margin-bottom: 0;
+  }
+  .copyright__text {
+    display: inline;
+    margin-right: 16px;
+  }
+  .copyright__img {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
