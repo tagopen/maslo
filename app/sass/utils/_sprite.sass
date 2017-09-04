@@ -16,25 +16,47 @@ $btnshadow-offset-y: 0px
 $btnshadow-width: 375px
 $btnshadow-height: 25px
 $btnshadow-total-width: 375px
-$btnshadow-total-height: 46px
+$btnshadow-total-height: 124px
 $btnshadow-image: 'sprite.png'
-$btnshadow: (0px, 0px, 0px, 0px, 375px, 25px, 375px, 46px, 'sprite.png', 'btnshadow', )
+$btnshadow: (0px, 0px, 0px, 0px, 375px, 25px, 375px, 124px, 'sprite.png', 'btnshadow', )
+$left-name: 'left'
+$left-x: 0px
+$left-y: 35px
+$left-offset-x: 0px
+$left-offset-y: -35px
+$left-width: 89px
+$left-height: 89px
+$left-total-width: 375px
+$left-total-height: 124px
+$left-image: 'sprite.png'
+$left: (0px, 35px, 0px, -35px, 89px, 89px, 375px, 124px, 'sprite.png', 'left', )
 $phone-name: 'phone'
-$phone-x: 0px
+$phone-x: 198px
 $phone-y: 35px
-$phone-offset-x: 0px
+$phone-offset-x: -198px
 $phone-offset-y: -35px
 $phone-width: 11px
 $phone-height: 11px
 $phone-total-width: 375px
-$phone-total-height: 46px
+$phone-total-height: 124px
 $phone-image: 'sprite.png'
-$phone: (0px, 35px, 0px, -35px, 11px, 11px, 375px, 46px, 'sprite.png', 'phone', )
+$phone: (198px, 35px, -198px, -35px, 11px, 11px, 375px, 124px, 'sprite.png', 'phone', )
+$right-name: 'right'
+$right-x: 99px
+$right-y: 35px
+$right-offset-x: -99px
+$right-offset-y: -35px
+$right-width: 89px
+$right-height: 89px
+$right-total-width: 375px
+$right-total-height: 124px
+$right-image: 'sprite.png'
+$right: (99px, 35px, -99px, -35px, 89px, 89px, 375px, 124px, 'sprite.png', 'right', )
 $spritesheet-width: 375px
-$spritesheet-height: 46px
+$spritesheet-height: 124px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: ($btnshadow, $phone, )
-$spritesheet: (375px, 46px, 'sprite.png', $spritesheet-sprites, )
+$spritesheet-sprites: ($btnshadow, $left, $phone, $right, )
+$spritesheet: (375px, 124px, 'sprite.png', $spritesheet-sprites, )
 
 // The provided mixins are intended to be used with the array-like variables
 //

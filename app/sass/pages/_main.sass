@@ -55,6 +55,13 @@ a
 +r(760)
   .heading
     font: 400 30px/40px $font-amavick 
+.button
+  position: relative    
+  .ic
+    position: absolute
+    bottom: -30px
+    left: 0
+    width: 90%
 +comment("tooltip style")     
 .tooltip
   &stered
@@ -208,6 +215,8 @@ a
     visibility: hidden
     height: 100%
     transition: all .5s ease
+    img
+      height: 100%
     &.active
       opacity: 1
       visibility: visible
@@ -286,7 +295,7 @@ a
   .purchase
     padding-top: 180px
     margin-top: -150px             
-+r(960)
++r(992)
   .purchase
     margin-top: -65px
     padding-bottom: 350px
@@ -338,7 +347,7 @@ a
       padding-left: 65px
       img
         top: -10px                
-+r(960)
++r(992)
   .make
     &__heading
       text-align: left
@@ -401,7 +410,7 @@ a
     background-position: center
     &__item
       display: inline-block
-+r(960)
++r(992)
   .produce
     margin-top: -90px
     &__item
@@ -444,7 +453,7 @@ a
     background-size: cover
     background-position: center 200px
     margin-top: -190px
-+r(960)
++r(992)
   .info
     background-position: center    
     padding-bottom: 90px
@@ -452,6 +461,78 @@ a
       margin-bottom: 100px
     &__image
       margin-bottom: 40px  
++comment("tech style")  
+.tech
+  padding: 150px 0 120px   
+  background: url(../img/techbg.png) no-repeat
+  background-size: cover
+  background-position: center
+  &__heading
+    text-align: center
+    margin-bottom: 30px
+  &__number
+    font: 400 24px/28px $font-amavick
+    color: #a5be3d
+    text-align: center
+    margin-bottom: 25px
+  &__title
+    font: 400 28px/28px $font-amavick
+    color: #615c53  
+    text-align: center
+    margin-bottom: 20px
+  &__text
+    font: 400 16px/20px $font-gotham
+    color: #635c52  
+    text-align: center
+  &__count
+    font: 400 20px/20px $font-amavick
+    color: #635c52  
+    text-align: center
+    line-height: 89px
+  &__arrows
+    position: absolute
+    bottom: -80px
+    height: 89px
+    width: 260px
+    left: 50%
+    margin-left: -130px
+    .slick
+      &-next,
+      &-prev
+        height: 89px
+        width: 89px
+        z-index: 25  
+      &-prev
+        left: 0
+      &-next
+        right: 0  
++r(760)
+  .tech
+    padding: 200px 0 140px
+    &__arrows
+      bottom: -120px                 
++r(992)
+  .tech
+    &__heading
+      text-align: left   
+      margin: 0  
+    &__box
+      padding-top: 80px
+    &__number
+      text-align: left
+    &__title
+      text-align: left
+    &__text
+      text-align: left 
+    &__arrows
+      left: 0
+      margin: 0
+      bottom: 80px         
++r(1200)
+  .tech
+    &__arrows
+      bottom: 180px
+
 
 +comment("section footer style")      
 .footer
@@ -472,4 +553,3 @@ a
   &__img
     display: block
     margin: 0 auto
-
