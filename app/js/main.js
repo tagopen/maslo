@@ -40,4 +40,24 @@ $('.tooltipstered').tooltipster({
     maxWidth: 460
 });
 
+$('.tech__slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  infinite: true,
+  focusOnSelect: true,
+  appendArrows: $('.tech__arrows'),
+  prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="ic ic--left"></i></button>',
+  nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="ic ic--right"></i></button>',
+  responsive: [
+  {
+    breakpoint: 1600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+  ]
+});
+
 })(jQuery); // End of use strict
