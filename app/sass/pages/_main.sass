@@ -1,0 +1,448 @@
++comment('general style')
++ic
+@each $sprite in $spritesheet-sprites
+  .ic--#{nth($sprite, 10)}
+    &:before
+      +bs($sprite)
++cm('form')
+.text-danger
+  color: $text-danger
+  text-align: left
+.form-group.error
+  .form-control
+    border-color: $form-control-error-border-color
+[type=submit]:disabled
+  animation: progress-bar-stripes 2s linear infinite
+  background-image: $btn-submit-loading-bg
+  background-size: 40px 40px
+@keyframes progress-bar-stripes
+  from
+    background-position: 40px 0
+  to
+    background-position: 0 0
+a
+  outline: none
+  &:hover,
+  &:focus
+    text-decoration: none
+    outline: none     
+* 
+  outline: 0 !important      
++cm('modal')
+.modal
+  -webkit-overflow-scrolling: touch
+  transform: translateZ(0)
+.modal.show 
+  display: flex !important
+  align-items: center
+.modal-dialog
+  position: relative
+  margin: auto
+.body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+.main
+  flex: 1
+.ic
+  vertical-align: top  
++comment("home page style")
+.heading
+  font: 400 18px/30px $font-amavick
+  color: #615c53
+  &--span
+    color: #a5be3d
++r(760)
+  .heading
+    font: 400 30px/40px $font-amavick 
++comment("tooltip style")     
+.tooltip
+  &stered
+    cursor: pointer
+  &__content
+    display: none
+  &__row
+    margin: 0
+  &__title
+    font: 700 14px/16px $font-gotham
+    color: #635c52   
+  &__list
+    padding: 0
+    list-style-type: none   
+  &__item 
+    font: 400 14px/16px $font-gotham
+    color: #635c52 
+  &__image
+    text-align: center
+    img
+      display: inline-block
+  &__text
+    font: 400 14px/16px $font-gotham
+    color: #635c52 
+    &--span
+      font: 700 14px/16px $font-gotham         
++comment("navbar style")
+.nav
+  padding-top: 30px
+  &__box
+    text-align: center
+    margin-bottom: 30px
+  &__logo
+    text-align: center
+    margin-bottom: 15px
+    img
+      display: inline-block
+  &__lang
+    display: inline-block
+    height: 30px
+    width: 30px
+    border-radius: 50%
+    border: 1px solid rgba(28, 28, 28, .15)  
+    background: transparent
+    font: 400 14px/27px $font-amavick
+    color: #1c1c1c  
+    text-align: center
+    text-transform: uppercase
+    transition: all .3s ease
+    &:hover,
+    &:focus
+      background-color: #9bbe29
+      color: #fff !important
+    &--active
+      background-color: #9bbe29
+      color: #fff !important
+      margin-right: 10px    
+.contact
+  text-align: center
+  margin-bottom: 30px
+  &__text
+    font: 400 17px/18px $font-amavick
+    color: #222   
+    text-transform: uppercase
+    &:hover,
+    &:focus
+      color: #9cbf2a 
+    &--span
+      display: inline-block
+      font: 400 18px/18px $font-amavick
+      color: #a5be3d 
+      margin: 0 8px  
++r(760)
+  .nav
+    padding: 40px 0 50px  
+    &__box
+      text-align: left
+  .contact
+    text-align: right
++comment("header style")  
+.header
+  min-height: 480px
+  padding-bottom: 400px
+  background: url(../img/headerbg.png) no-repeat
+  background-size: cover
+  background-position: center
+  &__subtitle
+    font: 400 16px/24px $font-amavick
+    color: #9cbf2a    
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 10px
+  &__title
+    font: 400 18px/30px $font-amavick
+    color: #615c53 
+    text-transform: uppercase
+    text-align: center
++r(760)
+  .header
+    height: 100vh
+    min-height: 800px
+    &__title
+      font: 400 42px/50px $font-amavick
+    &__subtitle
+      font: 400 24px/30px $font-amavick
++r(992)
+  .header
+    &__title
+      font: 400 46px/60px $font-amavick  
++comment("intro style")      
+.intro
+  padding-top: 160px
+  margin-top: -70px
+  background: url(../img/introbg.png) no-repeat
+  background-size: cover
+  background-position: center top
+  overflow: hidden
+  &__heading
+    text-align: center
+    margin-bottom: 30px
+    &--sm
+      display: none
+  &__btn
+    font: 400 14px/18px $font-amavick
+    text-align: center
+    padding: 20px 30px
+    border-radius: 30px !important
+    border: 2px solid #635c52 !important
+    color: #635c52 
+    margin-bottom: 35px
+    &:hover,
+    &:focus
+      color: #635c52 
+    &.active
+      background: #9cbf29 linear-gradient(to top, rgba(126, 152, 39, 0.81) 0%, rgba(156, 191, 41, 0.81) 100%)
+      border: 1px solid #635c52 !important
+      color: #fff !important
+      box-shadow: 0 0 20px 2px rgba(126,154,33,1)
+  &__text
+    font: 400 16px/20px $font-gotham
+    color: #615c53   
+    text-align: center 
+    margin-bottom: 40px
+  &__image
+    position: relative
+    height: 400px
+  &__img
+    position: absolute
+    top: 0
+    opacity: 0
+    visibility: hidden
+    height: 100%
+    transition: all .5s ease
+    &.active
+      opacity: 1
+      visibility: visible
+.tab-pane
+  text-align: center          
+.nav-tabs
+  display: block
+  border: 0 
+  padding: 0     
++r(760)
+  .intro
+    padding: 160px 0 60px    
+    &__heading
+      &--sm
+        display: block
+      &--lg
+        display: none  
+    &__btn
+      &:nth-child(1)
+        margin-right: 20px   
+    &__text
+      text-align: left
+    &__img
+      top: auto
+      bottom: 0  
++r(1200)
+  .intro
+    padding: 160px 0 0
+    &__heading
+      text-align: left  
+      &--sm
+        display: none
+      &--lg
+        display: block 
+    &__image
+      height: 480px      
+    &__img
+      left: 350px
+      opacity: 0.35
+      height: 100%
+      visibility: visible
+      transform: scale(0.7)
+      img
+        max-width: none
+      &.active
+        left: 0
+        opacity: 1
+        visibility: visible    
+        transform: scale(1)
+        img
+          max-width: 100%
+  .nav-tabs
+    display: flex  
++comment("purchase style") 
+.purchase
+  padding: 100px 0 560px
+  background: url(../img/purchasebg.png) no-repeat
+  background-size: cover
+  background-position: 33% center
+  margin-top: -55px
+  position: relative
+  z-index: 25
+  &__heading
+    text-align: center
+    margin-bottom: 30px 
+    cursor: pointer
+  &__text
+    font: 400 16px/20px $font-gotham
+    color: #615c53
+    text-align: center
+    &--span
+      font: 700 16px/20px $font-gotham
+      color: #9cbf29
+      text-decoration: underline
++r(760)
+  .purchase
+    padding-top: 180px
+    margin-top: -150px             
++r(960)
+  .purchase
+    margin-top: -65px
+    padding-bottom: 350px
+    &__heading
+      text-align: left
+    &__text
+      text-align: left 
++comment("make style") 
+.make
+  padding: 230px 0 50px
+  background: url(../img/makebg.png) no-repeat
+  background-size: cover
+  background-position: center
+  margin-top: -180px
+  position: relative
+  z-index: 10
+  &__heading
+    text-align: center
+    margin-bottom: 30px
+  &__subheading
+    font: 400 16px/20px $font-gotham
+    color: #615c53
+    text-align: center
+    margin-bottom: 15px
+  &__text  
+    font: 700 16px/20px $font-gotham
+    color: #615c53
+    margin-bottom: 35px
+    text-align: center 
+  &__image
+    text-align: center 
+    img
+      display: inline-block     
+  &__info
+    display: inline-block
+    position: relative
+    padding-left: 50px
+    margin-bottom: 55px
+    text-align: left 
+    img
+      position: absolute
+      left: -20px    
+      top: 0
+      margin-top: -25px 
+    &--1
+      img
+        left: -30px    
+    &--2
+      padding-left: 65px
+      img
+        top: -10px                
++r(960)
+  .make
+    &__heading
+      text-align: left
+    &__subheading
+      text-align: left    
+    &__text
+      text-align: left
++comment("produce style")
+.produce 
+  padding: 220px 0 120px
+  background: url(../img/producebg.png) no-repeat
+  background-size: cover
+  background-position: 70% top
+  margin-top: -120px
+  &__tabs
+    display: block
+    text-align: center
+    margin-bottom: 20px
+  &__btn
+    font: 700 16px/20px $font-gotham
+    color: #615c53 !important
+    text-decoration: underline
+    border: 0 !important
+    background: transparent !important
+    &.active
+      color: #a5be3d !important
+    &:hover,
+    &:focus
+      text-decoration: underline  
+  &__text
+    font: 400 16px/20px $font-gotham
+    color: #615c53    
+    margin-bottom: 20px
+  &__title
+    font: 700 16px/20px $font-gotham
+    color: #615c53  
+    text-align: center
+    margin-bottom: 15px
+  &__elem
+    font: 400 16px/20px $font-gotham
+    color: #615c53 
+    margin-bottom: 15px
+    &--span
+      font: 700 16px/20px $font-gotham
+  &__percent  
+    font: 400 30px/30px $font-amavick
+    color: #a5be3d
+  &__image
+    text-align: center
+    img
+      display: inline-block  
++r(760)
+  .produce
+    background-position: center
+    &__item
+      display: inline-block
++r(960)
+  .produce
+    margin-top: -90px
+    &__item
+      display: block
+      text-align: left     
+    &__btn
+      padding-left: 0  
+    &__text
+      text-align: left      
+    &__title
+      text-align: left   
+    &__elem
+      text-align: left 
+    &__text
+      padding-right: 15px  
++comment("detail style")       
+.info
+  padding: 100px 0 50px
+  &__heading
+    margin-bottom: 50px
+    text-align: center
+  &__box
+    text-align: center
+  &__image
+    margin-bottom: 30px
+    img
+      display: inline-block  
+  &__title
+    font: 700 16px/20px $font-gotham
+    color: #a5be3d    
+    text-decoration: underline
+    margin-bottom: 15px
+  &__text
+    font: 400 16px/20px $font-gotham
+    color: #615c53  
++r(760)
+  .info
+    padding-top: 240px
+    background: url(../img/infobg.png) no-repeat
+    background-size: cover
+    background-position: center 200px
+    margin-top: -190px
++r(960)
+  .info
+    background-position: center    
+    padding-bottom: 90px
+    &__heading
+      margin-bottom: 100px
+    &__image
+      margin-bottom: 40px  

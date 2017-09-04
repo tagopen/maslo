@@ -1,0 +1,27 @@
+section.intro
+  .container
+    .row
+      .col-md-24.intro__heading--sm
+        h2.heading.intro__heading!=content.index.intro.heading
+      .col-24.col-md-12.col-lg-16
+        h2.heading.intro__heading.intro__heading--lg!=content.index.intro.heading
+        .intro__box
+          ul.nav-tabs(role='tablist')
+            .nav-item
+              a.nav-link.intro__btn.intro__btn--1.active(href='#tab1', role='tab', data-toggle='tab')!=content.index.intro.tabs.btn1 
+            .nav-item
+              a.nav-link.intro__btn.intro__btn--2(href='#tab2', role='tab', data-toggle='tab')!=content.index.intro.tabs.btn2
+          // Tab panes
+          .tab-content
+            #tab1.tab-pane.in.active(role='tabpanel')
+              .intro__text!=content.index.intro.tabs.text1
+              img.img-fluid.hidden-md-up(src!=content.index.intro.tabs.img1.src, alt!=content.index.intro.tabs.img1.alt)
+            #tab2.tab-pane.fade(role='tabpanel')
+              .intro__text!=content.index.intro.tabs.text1
+              img.img-fluid.hidden-md-up(src!=content.index.intro.tabs.img2.src, alt!=content.index.intro.tabs.img2.alt)
+      .col-24.col-sm-18.offset-sm-3.col-md-12.offset-md-0.col-lg-8.hidden-sm-down
+        .intro__image 
+          .intro__img.intro__img--1.active
+            img.img-fluid(src!=content.index.intro.tabs.img1.src, alt!=content.index.intro.tabs.img1.alt)
+          .intro__img.intro__img--2
+            img.img-fluid(src!=content.index.intro.tabs.img2.src, alt!=content.index.intro.tabs.img2.alt)

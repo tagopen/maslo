@@ -1,0 +1,17 @@
+section.make
+  .container
+    .row
+      .col-24.col-lg-15
+        h2.heading.make__heading!=content.index.make.heading
+        .make__subheading!=content.index.make.subheading
+        .make__text!=content.index.make.text 
+        .row
+          .col-24.col-md-11.col-lg-10.text-center.text-lg-left
+            .make__info.make__info--1!=content.index.make.vitamin1.text
+              img(src!=content.index.make.vitamin1.src, alt!=content.index.make.vitamin1.alt)  
+          .col-24.col-sm-22.offset-sm-1.col-md-13.offset-md-0.col-lg-14.text-center.text-lg-left
+            .make__info.make__info--2!=content.index.make.vitamin2.text
+              img(src!=content.index.make.vitamin2.src, alt!=content.index.make.vitamin2.alt) 
+      .col-24.col-lg-8.offset-lg-1
+        .make__image
+          img.img-fluid(src!=content.index.make.img.src, alt!=content.index.make.img.alt) 
