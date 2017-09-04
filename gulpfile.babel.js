@@ -43,6 +43,7 @@ const path = {
     pug:            dirs.src + '/views/*.pug',
     img:            dirs.src + '/img/**/*.*',
     spritePng:      dirs.src + '/img/icons/**/*.png',
+    spriteSvg:      dirs.src + '/img/icons/svg/**/*.svg',
     fonts:          dirs.src + '/fonts/**/*.{woff,woff2}',
     mail:           dirs.src + '/mail/**/*'
   },
@@ -136,6 +137,26 @@ gulp.task('sprite', function() {
      $.replace(/^\.icon-/gm, '.ic--'), 
      gulp.dest(path.src.sprite)
    ));
+});
+
+gulp.task('svgstore', () => {
+  return gulp.src(path.watch.spriteSvg)
+    .pipe($.svgmin())
+    .pipe($.svgstore({
+      fileName: 'sprite.svg',
+      inlineSvg: true
+    }))
+    .pipe($.rename({basename: 'sprite'}))
+    .pipe(gulp.dest(path.src.img));
+});
+
+gulp.task('browser-sync',  ['pug', 'sass'], function() {
+  browserSync({
+    server: {
+      baseDir: dirs.src
+    },
+    notify: false
+  });
 });
 
 //gulp.task('svgSprite', function () {
@@ -256,6 +277,10 @@ gulp.task('watch', function(){
         gulp.start('sprite');
     });
 
+    $.watch([path.watch.spriteSvg], function(event, cb) {
+        gulp.start('svgstore');
+    });
+
     $.watch([path.watch.sass], function(event, cb) {
         gulp.start('sass');
     });
@@ -346,12 +371,13 @@ gulp.task('dev', ['clean', 'pug', 'fonts', 'sprite', 'img', 'sass', 'scripts'], 
 });
 
 gulp.task('build', [
+    'sprite',
+    'svgstore',
     'scripts',
     'pug',
     'sass',
     'fonts',
-    'img',
-    'sprite',
+    //'img',
 ]);
 
 gulp.task('default', ['build', 'watch', 'server']);

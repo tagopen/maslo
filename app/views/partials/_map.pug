@@ -1,0 +1,16 @@
+section.map
+  .container
+    .row.justify-content-center.justify-content-lg-end
+      .col-24.col-md-19.col-lg-12
+        .bubble
+          .bubble__box
+            h2.heading.bubble__heading!= page.map.bubble.heading
+            ul.bubble__list
+              each item in page.map.bubble.items
+                li.bubble__item
+                  +svg("bubble__icon", item.icon)
+                  b.bubble__title!= item.key
+                  if (item.value.link)
+                    a.bubble__link(href=item.value.link.href)!= item.value.link.text
+                  else
+                    span.bubble__text!= item.value.text

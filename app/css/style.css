@@ -419,6 +419,21 @@
   background: url(../img/sprite.png) -99px -35px no-repeat;
 }
 
+.svg--map-pin {
+  width: 0.8125em;
+  height: 1.25em;
+}
+
+.svg--phone {
+  width: 1em;
+  height: 1.0625em;
+}
+
+.svg--email {
+  width: 0.9375em;
+  height: 1em;
+}
+
 /* form */
 .text-danger {
   color: #b94a48;
@@ -1275,6 +1290,107 @@ a:hover, a:focus {
 @media only screen and (min-width: 1200px) {
   .tech__arrows {
     bottom: 180px;
+  }
+}
+
+/* ---------------------------------------- */
+/* S E C T I O N    M A P    S T Y L E      */
+/* ---------------------------------------- */
+.map {
+  padding: 140px 0 180px;
+  background-color: #d3d3d3;
+}
+
+.bubble {
+  position: relative;
+  -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  left: 35px;
+  bottom: -10px;
+  background-color: #fff;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  -webkit-transform: skew(0, -35deg) rotate(0deg);
+      -ms-transform: skew(0, -35deg) rotate(0deg);
+          transform: skew(0, -35deg) rotate(0deg);
+  z-index: 0;
+}
+
+.bubble__box {
+  position: relative;
+  padding: 36px 15px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.bubble__heading {
+  margin-bottom: 25px;
+}
+
+.bubble__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bubble__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 12px 0;
+}
+
+.bubble__icon {
+  margin-right: 14px;
+  fill: #9cbf29;
+}
+
+.bubble__title {
+  margin-right: 8px;
+}
+
+.bubble__text {
+  font: 400 16px/18px "GothamPro", sans-serif;
+  color: #615c53;
+}
+
+.bubble__link {
+  font: 400 16px/18px "GothamPro", sans-serif;
+  color: #615c53;
+}
+
+@media only screen and (min-width: 760px) {
+  .bubble__box {
+    padding: 51px 44px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .map {
+    padding: 80px 0 380px;
   }
 }
 

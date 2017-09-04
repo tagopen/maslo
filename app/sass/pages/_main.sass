@@ -4,6 +4,16 @@
   .ic--#{nth($sprite, 10)}
     &:before
       +bs($sprite)
+.svg
+  &--map-pin
+    width: em(13)
+    height: em(20)
+  &--phone
+    width: em(16)
+    height: em(17)
+  &--email
+    width: em(15)
+    height: em(16)
 +cm('form')
 .text-danger
   color: $text-danger
@@ -534,7 +544,61 @@ a
     &__arrows
       bottom: 180px
 
-
++comment("section map style")
+.map
+  padding: 140px 0 180px
+  background-color: #d3d3d3
+.bubble
+  position: relative
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2)
+  text-align: center
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    width: 28px
+    height: 28px
+    left: 35px
+    bottom: -10px
+    background-color: #fff
+    box-shadow: inherit
+    transform: skew(0, -35deg) rotate(0deg)
+    z-index: 0
+  &__box
+    position: relative
+    padding: 36px 15px
+    background-color: #fff
+    z-index: 2
+  &__heading
+    margin-bottom: 25px
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    margin: 12px 0
+  &__icon
+    margin-right: 14px
+    fill: #9cbf29
+  &__title
+    margin-right: 8px
+  &__text
+    font: 400 16px/18px $font-gotham
+    color: #615c53
+  &__link
+    font: 400 16px/18px $font-gotham
+    color: #615c53
++r(760)
+  .bubble
+    &__box
+      padding: 51px 44px
++r(992)
+  .map
+    padding: 80px 0 380px
 +comment("section footer style")      
 .footer
   padding: 61px 0 51px
