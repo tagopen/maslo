@@ -72,6 +72,20 @@ a
     bottom: -30px
     left: 0
     width: 90%
+  &--green
+    display: inline-block
+    vertical-align: middle
+    padding: 0.5rem 1rem
+    background-color: #a5be3d
+    background-image: linear-gradient(to top, rgba(133, 151, 53, 0.81) 0%, rgba(165, 190, 61, 0.81) 100%)
+    border: 1px solid #615c53
+    border-radius: 30px
+    font: 400 14px/26px $font-amavick 
+    color: #fff
+    text-align: center
+    white-space: nowrap
+    user-select: none
+    transition: all 0.2s ease-in-out
 +comment("tooltip style")     
 .tooltip
   &stered
@@ -544,6 +558,56 @@ a
     &__arrows
       bottom: 180px
 
++comment("section question style")
+.question
+.contact-form
+  &__input
+    background-color: whitesmoke
+    border-radius: 35px
+    border: none
+    box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15)
+    font: 400 16px/43px $font-gotham
+    color: #000
+    text-align: center
+    +placeholder
+      color: #615c53
+      transition: all .3s ease-out
+    &:focus
+      color: #000
+      outline: none
+      +placeholder
+        font-size: 10px
+        transform: translateY(-20px)
+  &__textarea
+    height: 170px
+    background-color: whitesmoke
+    border-radius: 35px
+    box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15)
+    border: none
+    font: 400 16px/43px $font-gotham
+    color: #000
+    text-align: center
+    +placeholder
+      color: #615c53
+      transition: all .3s ease-out
+    &:focus
+      color: #000
+      outline: none
+      +placeholder
+        font-size: 10px
+        transform: translateY(-20px)
+.form-control
+  &--full-size
+    width: 100%
+.notify
+  margin-top: 20px
+  font: 400 12px/14px  $font-gotham
+  +opacity(0.5)
+  color: #615c53
+  text-align: center
++r(992)
+  .notify
+    text-align: left
 +comment("section map style")
 .map
   padding: 140px 0 180px
@@ -599,6 +663,7 @@ a
 +r(992)
   .map
     padding: 80px 0 380px
+
 +comment("section footer style")      
 .footer
   padding: 61px 0 51px

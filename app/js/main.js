@@ -41,9 +41,9 @@
   });
   $(function () {
 
-    
-      var $status       = $('.tech__count'),
-          $slickElement = $('.tech__slider');
+    var $status       = $('.tech__count'),
+        $slickElement = $('.tech__slider');
+        
     if($slickElement.length) {
       $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
           //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)

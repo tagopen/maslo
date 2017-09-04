@@ -1,0 +1,31 @@
+section.question
+  .container
+    .row
+      .col-24
+        h2.heading.question__heading
+    form.contact-form.question__form(action="mail/mail.php", method="post")
+      .row
+        .col-24.col-lg-8.col-xl-6.flex-lg-first
+          .row
+            .col-24.col-md.col-lg-24
+              .form-group
+                input.form-control.form-control--full-size.contact-form__input(type="text", placeholder=page.question.form.name.placeholder, name="name", required)
+            .col-24.col-md.col-lg-24
+              .form-group
+                input.form-control.form-control--full-size.contact-form__input(type="tel", placeholder=page.question.form.phone.placeholder, name="phone", required)
+        .col-24.col-md-12.col-lg-8.col-xl-6
+          .form-group
+            input.form-control.form-control--full-size.contact-form__input(type="email", placeholder=page.question.form.email.placeholder, name="email", required)
+        .col-24.col-md-12.col-lg-16.col-xl-18
+          .form-group
+            select.form-control.form-control--full-size.contact-form__select(name="select", required)
+              option(disabled, selected)!= page.question.form.select.placeholder
+              each item in page.question.form.select.items
+                option!= item
+        .col-24.col-md-24.col-lg-16.col-xl-18.flex-lg-first
+          .form-group
+            textarea.form-control.form-control--full-size.contact-form__textarea( type="message", placeholder=page.question.form.message.placeholder, name="message", required)
+        .col-24.col-lg-8.col-xl-6
+          button.button.button--green.contact-form__submitform-control.form-control--full-size(name='form', value=page.question.form.submit.value, type='submit', data-loading-text=page.question.form.submit.loading)!= page.question.form.submit.text
+        .col-24.col-lg-16.col-xl-18
+          p.notify.contact-form__notify!= page.question.form.notify
