@@ -1,1 +1,14 @@
-.footer
+footer.footer
+  .container
+    .row
+      .col-24
+        .logo.footer__logo
+            img.img-fluid(src!=page.nav.logo.src, alt!=page.nav.logo.alt)
+      .col-24.flex-last.flex-md-unordered
+        small.copyright.footer__copyright
+          span.copyright__text!= page.footer.copyright.text
+          img.copyright__img(src=page.footer.copyright.img.src, alt=page.footer.copyright.img.alt)
+      .col-24
+        .contact.footer__contact
+          i.ic.ic--phone
+          a.contact__text(href!=page.nav.contact.href)!=page.nav.contact.text

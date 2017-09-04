@@ -385,7 +385,13 @@ a
       font: 700 16px/20px $font-gotham
   &__percent  
     font: 400 30px/30px $font-amavick
-    color: #a5be3d
+    color: transparent
+    text-shadow: 1px 1px 0 #75872b
+    background-image: linear-gradient(to top, rgba(133, 151, 53, 0.9) 0%, rgba(165, 190, 61, 0.9) 100%)
+    -webkit-background-clip: text
+    //-webkit-text-fill-color: #a5be3d
+    -webkit-text-stroke-width: 1px
+    -webkit-text-stroke-color: #acdc07
   &__image
     text-align: center
     img
@@ -446,3 +452,24 @@ a
       margin-bottom: 100px
     &__image
       margin-bottom: 40px  
+
++comment("section footer style")      
+.footer
+  padding: 61px 0 51px
+  background-color: #f5f5f5
+  &__logo
+    margin-bottom: 25px
+    text-align: center
+  &__contact
+    margin-bottom: 37px
+.copyright
+  text-align: center
+  &__text
+    display: block
+    margin-bottom: 13px
+    font: 300 16px/18px $font-gotham
+    color: #615c53
+  &__img
+    display: block
+    margin: 0 auto
+
