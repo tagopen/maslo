@@ -72,6 +72,17 @@
       });
     }
 
+    $(function() {
+      var $selectElement = $('.form-control--select');
+
+      if ($selectElement) {
+        $selectElement.select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: $(this).data('placeholder'), 
+          width: 'resolve'
+        });
+      }
+    });
   });
 
 })(jQuery); // End of use strict

@@ -322,34 +322,34 @@
         <div class="container">
           <div class="row">
             <div class="col-24">
-              <h2 class="heading question__heading"></h2>
+              <h2 class="heading question__heading">задайте нам вопрос или оставьте предложение</h2>
             </div>
           </div>
           <form class="contact-form question__form" action="mail/mail.php" method="post">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-24 col-lg-8 col-xl-6 flex-lg-first">
                 <div class="row">
                   <div class="col-24 col-md col-lg-24">
-                    <div class="form-group">
+                    <div class="form-group contact-form__group">
                       <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Введите ваше имя" name="name" required>
                     </div>
                   </div>
                   <div class="col-24 col-md col-lg-24">
-                    <div class="form-group">
+                    <div class="form-group contact-form__group">
                       <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Введите ваш телефон" name="phone" required>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-24 col-md-12 col-lg-8 col-xl-6">
-                <div class="form-group">
+                <div class="form-group contact-form__group">
                   <input class="form-control form-control--full-size contact-form__input" type="email" placeholder="Введите ваш email" name="email" required>
                 </div>
               </div>
               <div class="col-24 col-md-12 col-lg-16 col-xl-18">
-                <div class="form-group">
-                  <select class="form-control form-control--full-size contact-form__select" name="select" required>
-                    <option disabled selected>Укажите тему вашего вопроса</option>
+                <div class="form-group contact-form__group">
+                  <select class="form-control form-control--select form-control--full-size contact-form__select" name="question" data-placeholder="Укажите тему вашего вопроса" required>
+                    <option></option>
                     <option>тема 1</option>
                     <option>тема 2</option>
                     <option>тема 3</option>
@@ -357,12 +357,65 @@
                 </div>
               </div>
               <div class="col-24 col-md-24 col-lg-16 col-xl-18 flex-lg-first">
-                <div class="form-group">
+                <div class="form-group contact-form__group">
                   <textarea class="form-control form-control--full-size contact-form__textarea" type="message" placeholder="Введите текст" name="message" required></textarea>
                 </div>
               </div>
               <div class="col-24 col-lg-8 col-xl-6">
-                <button class="button button--green contact-form__submitform-control form-control--full-size" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Отправить</button>
+                <button class="button button--green contact-form__submit form-control form-control--full-size" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Отправить</button>
+              </div>
+              <div class="col-24 col-lg-16 col-xl-18">
+                <p class="notify contact-form__notify">Гарантируем полную конфиденциальность ваших данных</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="question">
+        <div class="container">
+          <div class="row">
+            <div class="col-24">
+              <h2 class="heading question__heading">задайте нам вопрос или оставьте предложение</h2>
+            </div>
+          </div>
+          <form class="contact-form question__form" action="mail/mail.php" method="post">
+            <div class="row align-items-center">
+              <div class="col-24 col-lg-8 col-xl-6 flex-lg-first">
+                <div class="row">
+                  <div class="col-24 col-md col-lg-24">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Введите ваше имя" name="name" required>
+                    </div>
+                  </div>
+                  <div class="col-24 col-md col-lg-24">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Введите ваш телефон" name="phone" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-24 col-md-12 col-lg-8 col-xl-6">
+                <div class="form-group contact-form__group">
+                  <input class="form-control form-control--full-size contact-form__input" type="email" placeholder="Введите ваш email" name="email" required>
+                </div>
+              </div>
+              <div class="col-24 col-md-12 col-lg-16 col-xl-18">
+                <div class="form-group contact-form__group">
+                  <select class="form-control form-control--select form-control--full-size contact-form__select" name="question" data-placeholder="Укажите тему вашего вопроса" required>
+                    <option></option>
+                    <option>тема 1</option>
+                    <option>тема 2</option>
+                    <option>тема 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-24 col-md-24 col-lg-16 col-xl-18 flex-lg-first">
+                <div class="form-group contact-form__group">
+                  <textarea class="form-control form-control--full-size contact-form__textarea" type="message" placeholder="Введите текст" name="message" required></textarea>
+                </div>
+              </div>
+              <div class="col-24 col-lg-8 col-xl-6">
+                <button class="button button--green contact-form__submit form-control form-control--full-size" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Отправить</button>
               </div>
               <div class="col-24 col-lg-16 col-xl-18">
                 <p class="notify contact-form__notify">Гарантируем полную конфиденциальность ваших данных</p>
@@ -474,7 +527,9 @@
     <!-- Old browsers reject JavaScript-->
     <script src="js/jquery.reject.js"></script>
     <!-- Tooltip JavaScript-->
-    <script src="js/tooltipster.bundle.min.js"></script>
+    <script src="js/tooltipster.bundle.js"></script>
+    <!-- Select2 JavaScript-->
+    <script src="js/select2.js"></script>
     <!-- Slick-Slider JavaScript-->
     <script src="js/slick.js"></script>
     <!-- Custom JavaScript-->

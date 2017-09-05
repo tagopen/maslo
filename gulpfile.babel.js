@@ -75,7 +75,8 @@ gulp.task('scripts', () => {
     //'node_modules/jquery.cookie/jquery.cookie.js',
     //'node_modules/matchHeight/dist/jquery.matchHeight.js',
     //'node_modules/bootstrap-slider/dist/bootstrap-slider.js',
-    //'node_modules/select2/dist/js/select2.js',
+    'node_modules/select2/dist/js/select2.js',
+    'node_modules/tooltipster/dist/js/tooltipster.bundle.js',
     //'node_modules/jquery-tags-input/src/jquery.tagsinput.js',
     //'node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
     //'node_modules/bootstrap-datepicker/dist/locales/*'
