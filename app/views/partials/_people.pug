@@ -1,0 +1,12 @@
+section.people
+  .container
+    .row.align-items-center
+      .col-24.col-lg-14
+        .people__photo
+          img.people__img(src=page.people.img.src, alt=page.people.img.alt)
+      .col-24.col-lg-10
+        h2.heading.people__heading!= page.people.heading
+        p.people__text!=  page.people.text
+        p.notify.people__notify!=  page.people.notify
+        .button-group
+          button.button.button--green!= page.people.btn.text
