@@ -1073,28 +1073,46 @@
   vertical-align: middle;
 }
 
-.ic--btnshadow:before {
-  width: 375px;
-  height: 25px;
-  background: url(../img/sprite.png) 0px 0px no-repeat;
+.ic--gear:before {
+  width: 112px;
+  height: 78px;
+  background: url(../img/sprite.png) 0px -84px no-repeat;
 }
 
 .ic--left:before {
   width: 89px;
   height: 89px;
-  background: url(../img/sprite.png) 0px -35px no-repeat;
+  background: url(../img/sprite.png) -129px 0px no-repeat;
+}
+
+.ic--medal:before {
+  width: 113px;
+  height: 66px;
+  background: url(../img/sprite.png) 0px -172px no-repeat;
+}
+
+.ic--people:before {
+  width: 119px;
+  height: 74px;
+  background: url(../img/sprite.png) 0px 0px no-repeat;
 }
 
 .ic--phone:before {
   width: 11px;
   height: 11px;
-  background: url(../img/sprite.png) -198px -35px no-repeat;
+  background: url(../img/sprite.png) -228px -99px no-repeat;
+}
+
+.ic--protect:before {
+  width: 109px;
+  height: 64px;
+  background: url(../img/sprite.png) -123px -172px no-repeat;
 }
 
 .ic--right:before {
   width: 89px;
   height: 89px;
-  background: url(../img/sprite.png) -99px -35px no-repeat;
+  background: url(../img/sprite.png) -228px 0px no-repeat;
 }
 
 .svg--map-pin {
@@ -1216,7 +1234,7 @@ a:hover, a:focus {
 /* H O M E    P A G E    S T Y L E          */
 /* ---------------------------------------- */
 .heading {
-  font: 400 18px/30px "amavick", sans-serif;
+  font: 400 20px/30px "amavick", sans-serif;
   color: #615c53;
 }
 
@@ -1232,6 +1250,22 @@ a:hover, a:focus {
 
 .button {
   position: relative;
+}
+
+.button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 20px;
+  bottom: -25px;
+  left: 0;
+  background: url(../img/btnshadow.png) no-repeat;
+  background-size: contain;
+}
+
+.button--size {
+  width: 100%;
 }
 
 .button .ic {
@@ -1252,7 +1286,7 @@ a:hover, a:focus {
   border: 1px solid #b0e111;
   -webkit-border-radius: 30px;
           border-radius: 30px;
-  font: 400 14px/26px "amavick", sans-serif;
+  font: 400 14px/20px "amavick", sans-serif;
   color: #fff;
   text-align: center;
   white-space: nowrap;
@@ -1262,6 +1296,12 @@ a:hover, a:focus {
           user-select: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 1200px) {
+  .button {
+    font: 400 16px/20px "amavick", sans-serif;
+  }
 }
 
 /* ---------------------------------------- */
@@ -1961,7 +2001,7 @@ a:hover, a:focus {
 
 @media only screen and (min-width: 760px) {
   .tech {
-    padding: 200px 0 140px;
+    padding: 200px 0;
   }
   .tech__arrows {
     bottom: -120px;
@@ -1993,8 +2033,198 @@ a:hover, a:focus {
 }
 
 @media only screen and (min-width: 1200px) {
+  .tech {
+    padding: 200px 0 20px;
+  }
   .tech__arrows {
     bottom: 180px;
+  }
+}
+
+/* ---------------------------------------- */
+/* P E O P L E    S T Y L E                 */
+/* ---------------------------------------- */
+.people {
+  padding: 120px 0 20px;
+  background: url(../img/peoplebg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -50px;
+}
+
+.people__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.people__text {
+  font: 400 16px/20px "GothamPro", sans-serif;
+  color: #615c53;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.people__notify {
+  font: 400 12px/16px "GothamPro", sans-serif;
+  text-align: center;
+  margin-bottom: 30px !important;
+}
+
+@media only screen and (min-width: 760px) {
+  .people {
+    padding-bottom: 40px;
+    margin-top: -65px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .people {
+    padding: 160px 0 60px;
+    margin-top: -80px;
+  }
+  .people__heading {
+    text-align: left;
+  }
+  .people__text {
+    text-align: left;
+  }
+  .people__notify {
+    text-align: left;
+  }
+}
+
+/* ---------------------------------------- */
+/* M I S S I O N    S T Y L E               */
+/* ---------------------------------------- */
+.mission {
+  padding: 150px 0 100px;
+  background: url(../img/missionbg.png) no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.mission__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mission__descr {
+  font: 400 18px/24px "GothamPro", sans-serif;
+  color: #615c53;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.ms-item {
+  margin-bottom: 25px;
+}
+
+.ms-item__photo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ms-item__name {
+  font: 700 18px/20px "GothamPro", sans-serif;
+  color: #a5be3d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ms-item__text {
+  font: 400 16px/18px "GothamPro", sans-serif;
+  color: #615c53;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .mission {
+    margin-top: -85px;
+    position: relative;
+    z-index: 20;
+  }
+  .mission__heading {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+  .mission__descr {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .ms-item {
+    margin-bottom: 35px;
+  }
+  .ms-item__photo {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .ms-item__name {
+    text-align: left;
+  }
+  .ms-item__text {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mission {
+    padding: 150px 0 150px;
+    margin-top: -100px;
+  }
+}
+
+/* ---------------------------------------- */
+/* T R A N S F E R    S T Y L E             */
+/* ---------------------------------------- */
+.transfer {
+  padding: 140px 0 120px;
+}
+
+.transfer__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.transfer__photo {
+  margin-bottom: 30px;
+}
+
+.transfer__text {
+  font: 400 16px/18px "GothamPro", sans-serif;
+  color: #615c53;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.transfer__link {
+  display: inline-block;
+  font: 700 18px/18px "GothamPro", sans-serif;
+  color: #a5be3d;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 760px) {
+  .transfer__link {
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .transfer__heading {
+    text-align: left;
+  }
+  .transfer__text {
+    text-align: left;
+  }
+  .transfer__photo {
+    position: relative;
+  }
+  .transfer__photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
