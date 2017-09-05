@@ -2,37 +2,37 @@ section.produce
   .container
     .row
       .col-24.col-lg-14.flex-lg-last
-        h2.heading.make__heading!=content.index.produce.heading
+        h2.heading.make__heading!=page.produce.heading
         .produce__box
           ul.nav-tabs.produce__tabs(role='tablist')
             .nav-item.produce__item
-              a.nav-link.produce__btn.active(href='#tab3', role='tab', data-toggle='tab')!=content.index.produce.tab1.btn
+              a.nav-link.produce__btn.active(href='#tab3', role='tab', data-toggle='tab')!=page.produce.tab1.btn
             .nav-item.produce__item
-              a.nav-link.produce__btn(href='#tab4', role='tab', data-toggle='tab')!=content.index.produce.tab2.btn
+              a.nav-link.produce__btn(href='#tab4', role='tab', data-toggle='tab')!=page.produce.tab2.btn
           // Tab panes
           .tab-content
             #tab3.tab-pane.in.active(role='tabpanel')
               .produce__info
-                .produce__text!=content.index.produce.tab1.text
-                .produce__title!=content.index.produce.tab1.title
+                .produce__text!=page.produce.tab1.text
+                .produce__title!=page.produce.tab1.title
                 .produce__details 
                   .row.justify-content-center
                     .col-24.col-md-18.col-lg-24
                       .row
-                        each item, i in content.index.produce.tab1.items
+                        each item, i in page.produce.tab1.items
                           .col-24.col-md-12.col-lg-10
                             .produce__elem!=item.text
             #tab4.tab-pane.fade(role='tabpanel')
               .produce__info
-                .produce__text!=content.index.produce.tab2.text
-                .produce__title!=content.index.produce.tab2.title
+                .produce__text!=page.produce.tab2.text
+                .produce__title!=page.produce.tab2.title
                 .produce__details 
                   .row.justify-content-center
                     .col-24.col-md-18.col-lg-24
                       .row
-                        each item, i in content.index.produce.tab2.items
+                        each item, i in page.produce.tab2.items
                           .col-24.col-md-12
                             .produce__elem!=item.text
       .col-24.col-lg-10.align-self-center
         .produce__image
-          img.img-fluid(src!=content.index.produce.img.src, alt!=content.index.produce.img.alt)                     
+          img.img-fluid(src!=page.produce.img.src, alt!=page.produce.img.alt)                     

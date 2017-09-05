@@ -4,18 +4,18 @@ header.header
       .row.justify-content-between.align-items-center
         .col-24.col-md-7.col-lg-4
           .nav__box
-            a.nav__lang.nav__lang--ru.nav__lang--active RU
-            a.nav__lang.nav__land--en EN
+            a.nav__lang.nav__lang--ru(class=content.site.lang === "ru" ? "nav__lang--active" : undefined) RU
+            a.nav__lang.nav__land--en(class=content.site.lang === "en" ? "nav__lang--active" : undefined) EN
         .col-24.col-md-10.col-lg-5 
           .logo.nav__logo
-            img.img-fluid(src!=content.index.nav.logo.src, alt!=content.index.nav.logo.alt)
+            img.img-fluid(src!=page.nav.logo.src, alt!=page.nav.logo.alt)
         .col-24.col-md-7.col-lg-4
           .nav__contact.contact
             i.ic.ic--phone
-            a.contact__text(href!=content.index.nav.contact.href)!=content.index.nav.contact.text
+            a.contact__text(href!=page.nav.contact.href)!=page.nav.contact.text
   .container
     .row
       .col-24
-        h2.header__subtitle!=content.index.header.subtitle
-        h1.header__title!=content.index.header.title           
+        h2.header__subtitle!=page.header.subtitle
+        h1.header__title!=page.header.title           
 
