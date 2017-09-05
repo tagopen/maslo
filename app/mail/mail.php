@@ -120,6 +120,12 @@
     $post_data["Высота ворот:"] = $post["user_range2"];
   }
 
+  if ( (!empty($_POST["question"])) && (isset($_POST["question"])) ) {
+    $post["user_question"] = $_POST["question"];
+    $body .= "Тема вопроса: " . $post["user_question"] . chr(10) . chr(13);
+    $post_data["Тема вопроса:"] = $post["user_question"];
+  }
+
   $body .= "Форма отправлена с сайта: " . $post["host_referer"];
   $post_data["Форма отправлена с сайта:"] = $post["host_referer"];
 

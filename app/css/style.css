@@ -1118,7 +1118,11 @@
   text-align: left;
 }
 
-.form-group.error .form-control {
+.form-group.has-error .form-control {
+  border-color: #b94a48;
+}
+
+.form-group.has-error .select2-container .select2-selection--single {
   border-color: #b94a48;
 }
 
@@ -2014,9 +2018,9 @@ a:hover, a:focus {
   background-color: whitesmoke;
   -webkit-border-radius: 35px;
           border-radius: 35px;
-  border: none;
   -webkit-box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15);
           box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
   font: 400 16px/43px "GothamPro", sans-serif;
   color: #000;
   text-align: center;
@@ -2081,9 +2085,9 @@ a:hover, a:focus {
   background-color: whitesmoke;
   -webkit-border-radius: 35px;
           border-radius: 35px;
+  border-color: transparent;
   -webkit-box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15);
           box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15);
-  border: none;
   font: 400 16px/23px "GothamPro", sans-serif;
   color: #000;
   text-align: center;
@@ -2166,7 +2170,7 @@ a:hover, a:focus {
   background-color: whitesmoke;
   -webkit-border-radius: 35px;
           border-radius: 35px;
-  border: none;
+  border-color: transparent;
   -webkit-box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15);
           box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15);
   font: 400 16px/43px "GothamPro", sans-serif;

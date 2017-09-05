@@ -1,5 +1,5 @@
 $(function() {
-  $('.contactForm').validator().on('submit', function (e) {
+  $('.contact-form').validator({focus: false}).on('submit', function (e) {
     var $form = $(this);
     if (e.isDefaultPrevented()) {
       // handle the invalid form...
@@ -17,6 +17,7 @@ $(function() {
           method             = $form.find('[name=method]').val(),
           range1             = $form.find('[name=range1]').val(),
           range2             = $form.find('[name=range2]').val(),
+          question           = $form.find('[name=question]').val(),
           period             = new Array(),
           material           = new Array();
 
@@ -47,6 +48,7 @@ $(function() {
           method: $.trim(method),
           message: $.trim(message),
           time: $.trim(time),
+          question: $.trim(question),
           period: period,
           material: material,
           range1: range1,

@@ -18,8 +18,10 @@
 .text-danger
   color: $text-danger
   text-align: left
-.form-group.error
+.form-group.has-error
   .form-control
+    border-color: $form-control-error-border-color
+  .select2-container .select2-selection--single
     border-color: $form-control-error-border-color
 [type=submit]:disabled
   animation: progress-bar-stripes 2s linear infinite
@@ -570,8 +572,8 @@ a
   &__input
     background-color: whitesmoke
     border-radius: 35px
-    border: none
     box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15)
+    border-color: transparent
     font: 400 16px/43px $font-gotham
     color: #000
     text-align: center
@@ -589,8 +591,8 @@ a
     padding: 20px 15px
     background-color: whitesmoke
     border-radius: 35px
+    border-color: transparent
     box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15)
-    border: none
     font: 400 16px/23px $font-gotham
     color: #000
     text-align: center
@@ -621,7 +623,7 @@ a
     padding: 15px 57px
     background-color: whitesmoke
     border-radius: 35px
-    border: none
+    border-color: transparent
     box-shadow: 2.5px 4.3px 13px rgba(0, 0, 0, 0.15)
     font: 400 16px/43px $font-gotham
     color: #615c53
