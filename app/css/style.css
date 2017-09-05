@@ -1245,7 +1245,7 @@ a:hover, a:focus {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(133, 151, 53, 0.81)), to(rgba(165, 190, 61, 0.81)));
   background-image: -webkit-linear-gradient(bottom, rgba(133, 151, 53, 0.81) 0%, rgba(165, 190, 61, 0.81) 100%);
   background-image: linear-gradient(to top, rgba(133, 151, 53, 0.81) 0%, rgba(165, 190, 61, 0.81) 100%);
-  border: 1px solid #615c53;
+  border: 1px solid #b0e111;
   -webkit-border-radius: 30px;
           border-radius: 30px;
   font: 400 14px/26px "amavick", sans-serif;

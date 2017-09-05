@@ -1,0 +1,15 @@
+section.transfer
+  .container
+    .row.align-items-center
+      .col-24.col-lg-12
+        h2.heading.transfer__heading!= page.transfer.heading
+        .hidden-md-up.transfer__photo
+          img.transfer__img(src=page.transfer.img.src, alt=page.transfer.img.alt)
+        p.transfer__text!=  page.transfer.text
+        p.notify.transfer__notify!=  page.transfer.notify
+        a.transfer__link(href=page.transfer.link.href)!= page.transfer.link.text
+        .button-group
+          button.button.button--green(type='button')!= page.transfer.btn.text
+      .hidden-sm-down.col-24.col-lg-12
+        .transfer__photo
+          img.transfer__img(src=page.transfer.img.src, alt=page.transfer.img.alt)
