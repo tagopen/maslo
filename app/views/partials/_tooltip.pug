@@ -3,27 +3,22 @@
     .row.tooltip__row
       .col-24.col-md-5
         .tooltip__image
-          img.img-fluid(src="img/tooltip1.png", alt="oil")
+          img.img-fluid(src=page.purchase.tooltip1.img.src, alt=page.purchase.tooltip1.img.alt)
       .col-24.col-md-19
-        .tooltip__title Базовые показатели по семенам сои:
+        .tooltip__title!= page.purchase.tooltip1.heading
         ul.tooltip__list
-          li.tooltio__item - влага – 12 %;
-          li.tooltio__item - сорная примесь – 2 %;
-          li.tooltio__item - масличная примесь – 6 %;
-          li.tooltio__item - зараженность вредителями – не допускается. 
+          each item in page.purchase.tooltip1.items
+            li.tooltip__item!= item
   #tooltip2
     .row.tooltip__row
       .col-24.col-md-5
         .tooltip__image
-          img.img-fluid(src="img/tooltip2.png", alt="meal")
+          img.img-fluid(src=page.purchase.tooltip2.img.src, alt=page.purchase.tooltip2.img.alt)
       .col-24.col-md-19
-        .tooltip__title Базовые показатели по семенам подсолнечника:
+        .tooltip__title!= page.purchase.tooltip2.heading
         ul.tooltip__list
-          li.tooltio__item - влага – 8,0%;
-          li.tooltio__item - сорная примесь – 3%;
-          li.tooltio__item - масличность - 45%;
-          li.tooltio__item - масличная примесь – 7%;
-          li.tooltio__item - зараженность вредителями – не допускается.
+          each item in page.purchase.tooltip2.items
+            li.tooltip__item!= item
   #tooltip3
     .row.tooltip__row
       .col-24
