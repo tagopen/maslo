@@ -45,6 +45,69 @@
                 .form-group.contact-form__group
                   input.form-control.form-control--full-size.contact-form__input(type="tel", placeholder=page.question.form.phone.placeholder, name="phone", required)      
               .col-24    
-                button.button.button--green.contact-form__submit.form-control.form-control--full-size.modal__btn(name='form', value=page.question.form.submit.value, type='submit', data-loading-text=page.question.form.submit.loading) page.question.form.submit.text
+                button.button.button--green.contact-form__submit.form-control.form-control--full-size.modal__btn(name='form', value=page.question.form.submit.value, type='submit', data-loading-text=page.question.form.submit.loading)!= page.question.form.submit.text
               .col-24.col-lg-16.col-xl-18
-                p.notify.contact-form__notify.modal__notify!= page.question.form.notify                
+                p.notify.contact-form__notify.modal__notify!= page.question.form.notify
+#modal__product.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-dialog.modal__size
+    .modal-content.modal__content
+      button.close.modal__close(type='button', data-dismiss='modal', aria-hidden='true')
+        svg(xmlns='http://www.w3.org/2000/svg', width='27', height='27', viewbox='0 0 27 27')
+          path(fill='#fff', d='M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z')   
+      .row.align-items-center
+        .col-24.col-md-12
+          .modal__title!= page.modal.product.heading
+          each item in page.modal.product.text
+            p.modal__text!= item
+        .col-24.col-md-12    
+          img.img-fluid.modal__img(src=page.modal.product.img.src, alt=page.modal.product.img.alt)
+#modal__cooperation.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-dialog.modal__size.modal__size--md
+    .modal-content.modal__content
+      button.close.modal__close(type='button', data-dismiss='modal', aria-hidden='true')
+        svg(xmlns='http://www.w3.org/2000/svg', width='27', height='27', viewbox='0 0 27 27')
+          path(fill='#fff', d='M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z')   
+      .row.justify-content-center
+        .col-24.col-lg-20 
+          .modal__title.modal__title--center!=page.modal.communication.title.text
+          .modal__subheading!= page.modal.communication.subheading
+      .row
+        .col-24  
+          form.contact__form.contactForm.contactForm--modal(method='post', action='./mail/mail.php')
+            .row.justify-content-center
+              .col-24.col-lg-12
+                .form-group.contact-form__group
+                  input.form-control.form-control--full-size.contact-form__input(type="text", placeholder=page.question.form.name.placeholder, name="name", required)
+              .col-24.col-lg-12
+                .form-group.contact-form__group
+                  input.form-control.form-control--full-size.contact-form__input(type="tel", placeholder=page.question.form.phone.placeholder, name="phone", required)      
+              .col-24    
+                button.button.button--green.contact-form__submit.form-control.form-control--full-size.modal__btn(name='form', value=page.question.form.submit.value, type='submit', data-loading-text=page.question.form.submit.loading)!= page.modal.communication.btn.text
+              .col-24.col-lg-16.col-xl-18
+                p.notify.contact-form__notify.modal__notify!= page.question.form.notify
+#modal__form.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-dialog.modal__size.modal__size--xs
+    .modal-content.modal__content
+      button.close.modal__close(type='button', data-dismiss='modal', aria-hidden='true')
+        svg(xmlns='http://www.w3.org/2000/svg', width='27', height='27', viewbox='0 0 27 27')
+          path(fill='#fff', d='M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z')   
+      .row
+        .col-24  
+          .modal__title.modal__title--center!=page.modal.form.title.text
+            span.modal__title--span!=page.modal.form.title.modify
+          .modal__subheading!= page.modal.form.subheading
+          form.contact__form.contactForm.contactForm--modal(method='post', action='./mail/mail.php')
+            .row.justify-content-center
+              .col-24
+                .form-group.contact-form__group
+                  input.form-control.form-control--full-size.contact-form__input(type="text", placeholder=page.question.form.name.placeholder, name="name", required)
+              .col-24
+                .form-group.contact-form__group
+                  input.form-control.form-control--full-size.contact-form__input(type="tel", placeholder=page.question.form.phone.placeholder, name="phone", required)  
+              .col-24
+                .form-group.contact-form__group
+                  input.form-control.form-control--full-size.contact-form__input(type="email", placeholder=page.question.form.email.placeholder, name="email", required)    
+              .col-24    
+                button.button.button--green.contact-form__submit.form-control.form-control--full-size.modal__btn(name='form', value=page.question.form.submit.value, type='submit', data-loading-text=page.question.form.submit.loading)!= page.question.form.submit.text
+              .col-24.col-lg-16.col-xl-18
+                p.notify.contact-form__notify.modal__notify!= page.question.form.notify

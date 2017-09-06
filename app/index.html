@@ -405,7 +405,7 @@
             </div>
             <div class="col-24 col-md-16 offset-md-4 col-lg-12 offset-lg-0 text-center text-lg-left"><a class="transfer__link" data-toggle="modal" href="#modal__transfer">Узнать подробнее о хранение продукции</a>
               <div class="button-group text-center text-lg-left">
-                <button class="button button--size button--green" type="button">Сотрудничество по транспорту</button>
+                <button class="button button--size button--green" type="button" data-toggle="modal" data-target="#modal__form">Сотрудничество по транспорту</button>
               </div>
             </div>
           </div>
@@ -579,7 +579,109 @@
                     </div>
                   </div>
                   <div class="col-24">   
-                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">page.question.form.submit.text</button>
+                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Отправить</button>
+                  </div>
+                  <div class="col-24 col-lg-16 col-xl-18">
+                    <p class="notify contact-form__notify modal__notify">Гарантируем полную конфиденциальность ваших данных</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal__product" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal__size">
+        <div class="modal-content modal__content">
+          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 27 27">
+              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z">  </path>
+            </svg>
+          </button>
+          <div class="row align-items-center">
+            <div class="col-24 col-md-12">
+              <div class="modal__title">product storage</div>
+              <p class="modal__text">Sunflower and soya meals are kept in warehouses equipped with supply and exhaust ventilation systems. The rooms have sufficient air flow, are clean, dry, not infested by bread damaging insects, protected from the sunlight and heating. The meal produced is stored in bulk or in bags.</p>
+              <p class="modal__text">Sunflower oil is stored in special reservoirs designed for this purpose following all norms and rules of keeping food products. The tanks and reservoirs for keeping oil are cleaned in terms required by normative documents (not less than once per year).</p>
+            </div>
+            <div class="col-24 col-md-12">   <img class="img-fluid modal__img" src="img/barrel.jpg" alt="barrel"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal__cooperation" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal__size modal__size--md">
+        <div class="modal-content modal__content">
+          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 27 27">
+              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z">  </path>
+            </svg>
+          </button>
+          <div class="row justify-content-center">
+            <div class="col-24 col-lg-20"> 
+              <div class="modal__title modal__title--center">Узнайте о возможностях сотрудничества c МЭЗ «Потоки»</div>
+              <div class="modal__subheading">Оставьте свои контакты, если вас интересует совместная работа с нашим заводом</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-24"> 
+              <form class="contact__form contactForm contactForm--modal" method="post" action="./mail/mail.php">
+                <div class="row justify-content-center">
+                  <div class="col-24 col-lg-12">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Введите ваше имя" name="name" required>
+                    </div>
+                  </div>
+                  <div class="col-24 col-lg-12">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Введите ваш телефон" name="phone" required>
+                    </div>
+                  </div>
+                  <div class="col-24">   
+                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Предложить возможность сотрудничества</button>
+                  </div>
+                  <div class="col-24 col-lg-16 col-xl-18">
+                    <p class="notify contact-form__notify modal__notify">Гарантируем полную конфиденциальность ваших данных</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal__form" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal__size modal__size--xs">
+        <div class="modal-content modal__content">
+          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 27 27">
+              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z">  </path>
+            </svg>
+          </button>
+          <div class="row">
+            <div class="col-24"> 
+              <div class="modal__title modal__title--center">Заполните форму<span class="modal__title--span"></span></div>
+              <div class="modal__subheading">и мы свяжемся с вами в течение 15 минут</div>
+              <form class="contact__form contactForm contactForm--modal" method="post" action="./mail/mail.php">
+                <div class="row justify-content-center">
+                  <div class="col-24">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Введите ваше имя" name="name" required>
+                    </div>
+                  </div>
+                  <div class="col-24">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Введите ваш телефон" name="phone" required>
+                    </div>
+                  </div>
+                  <div class="col-24">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="email" placeholder="Введите ваш email" name="email" required>
+                    </div>
+                  </div>
+                  <div class="col-24">   
+                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Отправить</button>
                   </div>
                   <div class="col-24 col-lg-16 col-xl-18">
                     <p class="notify contact-form__notify modal__notify">Гарантируем полную конфиденциальность ваших данных</p>

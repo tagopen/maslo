@@ -72,6 +72,8 @@ button
     color: #635c52 
     &--span
       color: #9cbf29
+    &--center
+      text-align: center
   &__text
     font: 400 18px/27px $font-gotham
     margin-bottom: 20px
@@ -89,6 +91,10 @@ button
       .modal__close
         right: 15px
         top: 15px
+      &--md
+        width: 506px
+      &--xs
+        width: 380px
     &__content
       padding: 40px 40px 25px
     &__close
@@ -99,6 +105,10 @@ button
   .modal
     &__size
       width: 1000px 
+      &--md
+        width: 770px
+      &--xs
+        width: 500px
       max-width: none    
       .modal__close
         right: -30px
@@ -859,7 +869,7 @@ button
   &--full-size
     width: 100%
 .notify
-  margin: 0
+  margin: 15px 0 0
   font: 400 16px/18px  $font-gotham
   +opacity(0.5)
   color: #615c53

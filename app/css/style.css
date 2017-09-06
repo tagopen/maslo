@@ -1241,6 +1241,10 @@ button {
   color: #9cbf29;
 }
 
+.modal__title--center {
+  text-align: center;
+}
+
 .modal__text {
   font: 400 18px/27px "GothamPro", sans-serif;
   margin-bottom: 20px;
@@ -1265,6 +1269,12 @@ button {
     right: 15px;
     top: 15px;
   }
+  .modal__size--md {
+    width: 506px;
+  }
+  .modal__size--xs {
+    width: 380px;
+  }
   .modal__content {
     padding: 40px 40px 25px;
   }
@@ -1279,6 +1289,12 @@ button {
   .modal__size {
     width: 1000px;
     max-width: none;
+  }
+  .modal__size--md {
+    width: 770px;
+  }
+  .modal__size--xs {
+    width: 500px;
   }
   .modal__size .modal__close {
     right: -30px;
@@ -2547,7 +2563,7 @@ button {
 }
 
 .notify {
-  margin: 0;
+  margin: 15px 0 0;
   font: 400 16px/18px "GothamPro", sans-serif;
   opacity: 0.5;
   filter: alpha(opactiy=50);
