@@ -1375,13 +1375,17 @@ button {
   display: inline-block;
   vertical-align: middle;
   padding: 20px 25px;
-  background-color: #a5be3d;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(133, 151, 53, 0.81)), to(rgba(165, 190, 61, 0.81)));
-  background-image: -webkit-linear-gradient(bottom, rgba(133, 151, 53, 0.81) 0%, rgba(165, 190, 61, 0.81) 100%);
-  background-image: linear-gradient(to top, rgba(133, 151, 53, 0.81) 0%, rgba(165, 190, 61, 0.81) 100%);
-  border: 1px solid #b0e111;
+  -webkit-box-shadow: 0 0 20px 2px #7e9a21;
+          box-shadow: 0 0 20px 2px #7e9a21;
+  -webkit-box-shadow: 0 2px 20px #7e9a21, 0 1px 0 #6e8819;
+          box-shadow: 0 2px 20px #7e9a21, 0 1px 0 #6e8819;
   -webkit-border-radius: 30px;
           border-radius: 30px;
+  border: 1px solid #b1e208;
+  background-color: #9cbf29;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(126, 152, 39, 0.9)), to(rgba(156, 191, 41, 0.9)));
+  background-image: -webkit-linear-gradient(bottom, rgba(126, 152, 39, 0.9) 0%, rgba(156, 191, 41, 0.9) 100%);
+  background-image: linear-gradient(to top, rgba(126, 152, 39, 0.9) 0%, rgba(156, 191, 41, 0.9) 100%);
   font: 400 16px/20px "amavick", sans-serif;
   color: #fff;
   text-align: center;
@@ -1615,13 +1619,18 @@ button {
 }
 
 .intro__btn.active {
-  background: #9cbf29 -webkit-gradient(linear, left bottom, left top, from(rgba(126, 152, 39, 0.81)), to(rgba(156, 191, 41, 0.81)));
-  background: #9cbf29 -webkit-linear-gradient(bottom, rgba(126, 152, 39, 0.81) 0%, rgba(156, 191, 41, 0.81) 100%);
-  background: #9cbf29 linear-gradient(to top, rgba(126, 152, 39, 0.81) 0%, rgba(156, 191, 41, 0.81) 100%);
-  border: 1px solid #635c52 !important;
   color: #fff !important;
   -webkit-box-shadow: 0 0 20px 2px #7e9a21;
           box-shadow: 0 0 20px 2px #7e9a21;
+  -webkit-box-shadow: 0 2px 20px #7e9a21, 0 1px 0 #6e8819;
+          box-shadow: 0 2px 20px #7e9a21, 0 1px 0 #6e8819;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 1px solid #b1e208 !important;
+  background-color: #9cbf29;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(126, 152, 39, 0.9)), to(rgba(156, 191, 41, 0.9)));
+  background-image: -webkit-linear-gradient(bottom, rgba(126, 152, 39, 0.9) 0%, rgba(156, 191, 41, 0.9) 100%);
+  background-image: linear-gradient(to top, rgba(126, 152, 39, 0.9) 0%, rgba(156, 191, 41, 0.9) 100%);
 }
 
 .intro__text {
