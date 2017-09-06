@@ -153,15 +153,17 @@ button
     background-image: linear-gradient(to top, rgba(133, 151, 53, 0.81) 0%, rgba(165, 190, 61, 0.81) 100%)
     border: 1px solid #b0e111
     border-radius: 30px
-    font: 400 14px/20px $font-amavick 
+    font: 400 16px/20px $font-amavick 
     color: #fff
     text-align: center
-    white-space: nowrap
+    white-space: normal
     user-select: none
     transition: all 0.2s ease-in-out
 +r(1200)
   .button 
-    font: 400 16px/20px $font-amavick    
+    font: 400 18px/20px $font-amavick   
+    &--green 
+      font: 400 18px/20px $font-amavick   
 +comment("tooltip style")     
 .tooltip
   &stered
@@ -286,7 +288,7 @@ button
     &--sm
       display: none
   &__btn
-    font: 400 14px/18px $font-amavick
+    font: 400 18px/18px $font-amavick
     text-align: center
     padding: 20px 30px
     border-radius: 30px !important

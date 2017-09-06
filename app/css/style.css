@@ -1382,10 +1382,10 @@ button {
   border: 1px solid #b0e111;
   -webkit-border-radius: 30px;
           border-radius: 30px;
-  font: 400 14px/20px "amavick", sans-serif;
+  font: 400 16px/20px "amavick", sans-serif;
   color: #fff;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1396,7 +1396,10 @@ button {
 
 @media only screen and (min-width: 1200px) {
   .button {
-    font: 400 16px/20px "amavick", sans-serif;
+    font: 400 18px/20px "amavick", sans-serif;
+  }
+  .button--green {
+    font: 400 18px/20px "amavick", sans-serif;
   }
 }
 
@@ -1597,7 +1600,7 @@ button {
 }
 
 .intro__btn {
-  font: 400 14px/18px "amavick", sans-serif;
+  font: 400 18px/18px "amavick", sans-serif;
   text-align: center;
   padding: 20px 30px;
   -webkit-border-radius: 30px !important;
