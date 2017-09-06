@@ -66,7 +66,7 @@
               <div class="logo nav__logo"><img class="img-fluid" src="img/logo/logo.png" alt="Лого"></div>
             </div>
             <div class="col-24 col-md-7 col-lg-4">
-              <div class="nav__contact contact"><i class="ic ic--phone"></i><a class="contact__text" href="tel/:0800123456"><span class="contact__text--span"> \ </span>0-800-12-34-56</a></div>
+              <div class="nav__contact contact"><a class="nav__call" data-toggle="modal" href="#modal__call"><i class="ic ic--phone"></i></a><a class="contact__text" href="tel/:0800123456"><span class="contact__text--span"> \ </span>0-800-12-34-56</a></div>
             </div>
           </div>
         </div>
@@ -392,7 +392,7 @@
             <div class="col-lg-12 hidden-md-down">
               <div class="transfer__photo"><img class="transfer__img" src="img/illustration.svg" alt="Люди"></div>
             </div>
-            <div class="col-24 col-md-16 offset-md-4 col-lg-12 offset-lg-0 text-center text-lg-left"><a class="transfer__link" href="#">Узнать подробнее о хранение продукции</a>
+            <div class="col-24 col-md-16 offset-md-4 col-lg-12 offset-lg-0 text-center text-lg-left"><a class="transfer__link" data-toggle="modal" href="#modal__transfer">Узнать подробнее о хранение продукции</a>
               <div class="button-group text-center text-lg-left">
                 <button class="button button--size button--green" type="button">Сотрудничество по транспорту</button>
               </div>
@@ -461,17 +461,17 @@
                 <div class="bubble__box">
                   <h2 class="heading bubble__heading">Наши контакты</h2>
                   <ul class="bubble__list">
-                    <li class="bubble__item">
+                    <li class="bubble__item justify-content-lg-start">
                       <svg class="svg svg--map-pin bubble__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
                         <use xlink:href="img/sprite.svg#map-pin"></use>
                       </svg><b class="bubble__title">Адрес:</b><span class="bubble__text">Украина, г. Днепр, ул. Байкальская 9</span>
                     </li>
-                    <li class="bubble__item">
+                    <li class="bubble__item justify-content-lg-start">
                       <svg class="svg svg--phone bubble__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
                         <use xlink:href="img/sprite.svg#phone"></use>
                       </svg><b class="bubble__title">Телефон:</b><a class="bubble__link" href="tel:0800123456">0-800-12-34-56</a>
                     </li>
-                    <li class="bubble__item">
+                    <li class="bubble__item justify-content-lg-start">
                       <svg class="svg svg--email bubble__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
                         <use xlink:href="img/sprite.svg#email"></use>
                       </svg><b class="bubble__title">Email:</b><a class="bubble__link" href="mailto:info@mez.com.ua">info@mez.com.ua</a>
@@ -497,6 +497,102 @@
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="modal__call" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal__content">
+          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
+            <svg class="hidden-md-up" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 30 30">
+              <metadata>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                  <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:description rdf:about=""></rdf:description>
+                  </rdf:rdf>
+                </x:xmpmeta>
+              </metadata>
+              <defs></defs>
+              <path class="modal__close--icon" d="M1199.01,185.281l-0.72.732L1184,171.37l-14.29,14.643-0.72-.732,14.3-14.644-13.58-13.911,0.71-.732L1184,169.905l13.58-13.911,0.71,0.732-13.58,13.911Z" transform="translate(-1169 -156)">       </path>
+            </svg><i class="ic ic--close hidden-sm-down"></i>
+          </button>
+          <div class="modal__heading">заполните форму</div>
+          <div class="modal__subheading">мы свяжемся с вами в течение 15 минут</div>
+          <form class="contact__form contactForm contactForm--modal" method="post" action="./mail/mail.php">
+            <div class="row justify-content-center">
+              <div class="col-24">
+                <div class="form-group contact-form__group">
+                  <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Введите ваше имя" name="name" required>
+                </div>
+              </div>
+              <div class="col-24">
+                <div class="form-group contact-form__group">
+                  <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Введите ваш телефон" name="phone" required>
+                </div>
+              </div>
+              <div class="col-24">
+                <div class="form-group contact-form__group">
+                  <input class="form-control form-control--full-size contact-form__input" type="email" placeholder="Введите ваш email" name="email" required>
+                </div>
+              </div>
+              <div class="col-24">   
+                <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Отправить</button>
+              </div>
+              <div class="col-24 col-lg-16 col-xl-18">
+                <p class="notify contact-form__notify modal__notify">Гарантируем полную конфиденциальность ваших данных</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal__transfer" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal__size">
+        <div class="modal-content modal__content">
+          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
+            <svg class="hidden-lg-up" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 30 30">
+              <metadata>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                  <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:description rdf:about=""></rdf:description>
+                  </rdf:rdf>
+                </x:xmpmeta>
+              </metadata>
+              <defs></defs>
+              <path class="modal__close--icon" d="M1199.01,185.281l-0.72.732L1184,171.37l-14.29,14.643-0.72-.732,14.3-14.644-13.58-13.911,0.71-.732L1184,169.905l13.58-13.911,0.71,0.732-13.58,13.911Z" transform="translate(-1169 -156)">       </path>
+            </svg><i class="ic ic--close hidden-md-down"></i>
+          </button>
+          <div class="row">
+            <div class="col-24 col-md-12">
+              <div class="modal__title">хранение продукции</div>
+              <div class="modal__text">Шрот подсолнечника и сои хранят в складских помещениях, оборудованных приточно-вытяжной вентиляцией. Помещения хорошо проветриваются, чистые, сухие, не зараженные вредителями хлебных запасов, защищенные от попадания солнечного света и источников тепла. Произведенный шрот хранится насыпом или в мешках.</div>
+              <div class="modal__text">Масло растительное хранится в специальных емкостях хранения отвечающих всем нормам и правилам хранения пищевых продуктов. Очистка баков и емкостей, в котрых хранят масло происходит в требуемые нормативными документами сроками (не реже одного раза в год).</div>
+            </div>
+            <div class="col-24 col-md-12">   
+              <div class="modal__title">Узнайте о возможностях сотрудничества c МЭЗ <span class="modal__title--span">«Потоки»</span></div>
+              <div class="modal__subheading modal__subheading--left">Оставьте свои контакты, если вас интересует совместная работа с нашим заводом</div>
+              <form class="contact__form contactForm contactForm--modal" method="post" action="./mail/mail.php">
+                <div class="row justify-content-center">
+                  <div class="col-24">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Введите ваше имя" name="name" required>
+                    </div>
+                  </div>
+                  <div class="col-24">
+                    <div class="form-group contact-form__group">
+                      <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Введите ваш телефон" name="phone" required>
+                    </div>
+                  </div>
+                  <div class="col-24">   
+                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Задайте нам вопрос" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; Файл отправляется...">Обсудить возможность сотрудничества</button>
+                  </div>
+                  <div class="col-24 col-lg-16 col-xl-18">
+                    <p class="notify contact-form__notify modal__notify">Гарантируем полную конфиденциальность ваших данных</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="tooltip__content">
       <div id="tooltip1">
         <div class="row tooltip__row">

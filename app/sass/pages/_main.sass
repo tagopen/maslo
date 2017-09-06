@@ -38,12 +38,68 @@ a
   &:focus
     text-decoration: none
     outline: none     
+button
+  cursor: pointer    
 * 
   outline: 0 !important      
 +cm('modal')
 .modal
   -webkit-overflow-scrolling: touch
   transform: translateZ(0)
+  &__content
+    position: relative
+    padding: 40px 30px 20px
+    border-radius: 30px
+  &__close
+    position: absolute
+    right: 15px
+    top: 15px 
+  &__heading
+    font: 400 30px/34px $font-amavick
+    margin-bottom: 10px
+    color: #635c52
+    text-align: center  
+  &__subheading
+    font: 400 16px/20px $font-gotham
+    color: #635c52
+    margin-bottom: 25px
+    text-align: center  
+    &--left
+      text-align: left
+  &__title
+    font: 400 30px/34px $font-amavick
+    margin-bottom: 15px 
+    color: #635c52 
+    &--span
+      color: #9cbf29
+  &__text
+    font: 400 18px/27px $font-gotham
+    margin-bottom: 20px
+    color: #635c52
+  &__btn
+    margin-bottom: 15px !important
+    white-space: normal !important
+  &__notify
+    text-align: center !important 
++r(760)
+  .modal
+    &__size
+      width: 760px
+      max-width: none
+      .modal__close
+        right: 15px
+        top: 15px
+    &__content
+      padding: 40px 40px 25px
+    &__close
+      position: absolute
+      right: -30px
+      top: -30px      
++r(1200)
+  .modal
+    &__size
+      width: 1000px 
+      max-width: none     
 .modal.show 
   display: flex !important
   align-items: center
@@ -805,8 +861,9 @@ a
 +comment("section map style")
 .map
   padding: 140px 0 180px
-  background: #d3d3d3 url(../img/map-xs.jpg) no-repeat scroll 0 50%
+  background: #d3d3d3 url(../img/map.svg) no-repeat
   background-size: cover
+  background-position: center
 .bubble
   position: relative
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2)
