@@ -1789,13 +1789,16 @@ button {
 /* M A K E    S T Y L E                     */
 /* ---------------------------------------- */
 .make {
-  padding: 230px 0 50px;
-  background: url(../img/makebg.png) no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 250px 0 70px;
   margin-top: -180px;
   position: relative;
   z-index: 10;
+}
+
+.make__container {
+  background: url(../img/makebg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .make__heading {
