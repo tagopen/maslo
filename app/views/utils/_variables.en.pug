@@ -440,4 +440,51 @@
 
         }
       }, //- index
+      successEN: {
+        hostname: "success.html",
+        title: "Form submitted",
+        meta: {
+          description: "",
+          keywords: "",
+          openGraph: {
+            title: "Site name",
+            siteName: "Site name",
+            description: "Описание сайта",
+            type: "website",
+            locale: "ru_RU",
+            image: "microformat.png",
+            imageType: "image/png",
+            url: hostname
+          },
+          twitter: {
+            card: "summary",
+            site: "@flickr",
+            title: "My Site",
+            description: "My Site is cool",
+            image: hostname + "/img/logo/microformat.png"
+          }
+        },
+        nav: {
+          logo: {
+            src: "img/logo/logo.png",
+            alt: "Лого",
+          },
+          logo2: {
+            src: "img/logo/logo-horizontal.png",
+            alt: "Лого",
+          },
+          contact: {
+            text: "<span class=\"contact__text--span\"> \\ </span>0-800-12-34-56",
+            href: "tel/:0800123456"
+          }
+        },
+        header: {
+          title: "We will contact you shortly",
+          subtitle: "Thank you for the application left!",
+          btn: {
+            href: "/",
+            text: "Go back to the main page"
+          }
+        },
+      }, //- success.html
     }

@@ -1412,6 +1412,12 @@ button {
           user-select: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.button--green:hover, .button--green:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1579,6 +1585,14 @@ button {
   color: #615c53;
   text-transform: uppercase;
   text-align: center;
+}
+
+.header__button-group {
+  text-align: center;
+}
+
+.header__btn {
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: 760px) {

@@ -18,5 +18,8 @@ header.header
     .row
       .col-24
         h2.header__subtitle!=page.header.subtitle
-        h1.header__title!=page.header.title           
+        h1.header__title!=page.header.title  
+        if (page.header.btn) 
+          .button-group.header__button-group
+            a.button.button--green.header__btn(href=page.header.btn.href)!= page.header.btn.text
 
