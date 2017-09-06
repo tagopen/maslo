@@ -6,7 +6,7 @@ each value, key in content
 unless (page.meta)
   - page.meta = content.site.meta
 block variables
-
+    
 doctype html
 html(lang=content.site.lang, prefix='og: http://ogp.me/ns#')
   head
@@ -54,17 +54,17 @@ html(lang=content.site.lang, prefix='og: http://ogp.me/ns#')
     // build:css css/bundle.min.css
     
     // Fonts CSS
-    link(rel='stylesheet' href='css/fonts.css')
+    link(rel='stylesheet' href='../css/fonts.css')
     // Bootstrap CSS
-    link(rel='stylesheet' href='css/bootstrap.css')
+    link(rel='stylesheet' href='../css/bootstrap.css')
     // Font-Awesome CSS
-    link(rel='stylesheet' href='css/font-awesome.css')
+    link(rel='stylesheet' href='../css/font-awesome.css')
     // Tooltip CSS
-    link(rel='stylesheet' href='css/tooltipster.bundle.css')
-    link(rel='stylesheet' href='css/tooltipster-sideTip-shadow.min.css')    
+    link(rel='stylesheet' href='../css/tooltipster.bundle.css')
+    link(rel='stylesheet' href='../css/tooltipster-sideTip-shadow.min.css')    
     block styles
     // Custom CSS 
-    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='../css/style.css')
 
     // endbuild
 
@@ -85,24 +85,24 @@ html(lang=content.site.lang, prefix='og: http://ogp.me/ns#')
     // build:js js/bundle.min.js
 
     // Tether JavaScript
-    script(src='js/tether.js')
+    script(src='../js/tether.js')
     // jQuery
-    script(src='js/jquery.js')
+    script(src='../js/jquery.js')
     // Bootstrap JavaScript
-    script(src='js/bootstrap.js')
+    script(src='../js/bootstrap.js')
     // Old browsers reject JavaScript
-    script(src='js/jquery.reject.js')
+    script(src='../js/jquery.reject.js')
     block scripts
     // Tooltip JavaScript
-    script(src='js/tooltipster.bundle.js')
+    script(src='../js/tooltipster.bundle.js')
     // Validator JavaScript
-    script(src='js/validator.js')
-    script(src='js/contact_me.js')
+    script(src='../js/validator.js')
+    script(src='../js/contact_me.js')
     // Select2 JavaScript
-    script(src='js/select2.js')
+    script(src='../js/select2.js')
     // Slick-Slider JavaScript
-    script(src='js/slick.js')
+    script(src='../js/slick.js')
     // Custom JavaScript
-    script(src='js/main.js')
+    script(src='../js/main.js')
 
     // endbuild
