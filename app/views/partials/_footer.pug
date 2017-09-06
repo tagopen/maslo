@@ -11,5 +11,6 @@ footer.footer
           img.copyright__img(src=page.footer.copyright.img.src, alt=page.footer.copyright.img.alt)
       .col-24.col-md-7.col-xl-4
         .contact.footer__contact
-          i.ic.ic--phone
+          a.contact__link(data-toggle="modal", href="#modal__call")
+            i.ic.ic--phone
           a.contact__text(href!=page.nav.contact.href)!=page.nav.contact.text
