@@ -1280,6 +1280,10 @@ button {
     width: 1000px;
     max-width: none;
   }
+  .modal__size .modal__close {
+    right: -30px;
+    top: -30px;
+  }
 }
 
 .modal.show {
@@ -1823,7 +1827,13 @@ button {
   position: relative;
   padding-left: 50px;
   margin-bottom: 55px;
+  font: 400 16px/20px "GothamPro", sans-serif;
   text-align: left;
+  color: #635c52;
+}
+
+.make__info--span {
+  font: 700 16px/20px "GothamPro", sans-serif;
 }
 
 .make__info img {
@@ -2091,6 +2101,10 @@ button {
   right: 0;
 }
 
+.tech__image img {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 760px) {
   .tech {
     padding: 200px 0;
@@ -2130,6 +2144,11 @@ button {
   }
   .tech__arrows {
     bottom: 180px;
+    left: 50%;
+    margin-left: -585px;
+  }
+  .tech__image img {
+    max-width: none;
   }
 }
 
@@ -2193,6 +2212,8 @@ button {
   background: url(../img/missionbg.png) no-repeat;
   background-size: cover;
   background-position: center top;
+  position: relative;
+  z-index: 25;
 }
 
 .mission__heading {
@@ -2233,7 +2254,6 @@ button {
   .mission {
     margin-top: -85px;
     position: relative;
-    z-index: 20;
   }
   .mission__heading {
     text-align: left;
@@ -2270,6 +2290,12 @@ button {
 /* ---------------------------------------- */
 .transfer {
   padding: 140px 0 120px;
+  background: url(../img/transferbg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -140px;
+  position: relative;
+  z-index: 20;
 }
 
 .transfer__heading {
@@ -2324,7 +2350,11 @@ button {
 /* S E C T I O N    Q U E S T I O N    S T Y L E  */
 /* ---------------------------------------------- */
 .question {
-  padding: 88px 0 72px;
+  padding: 148px 0 72px;
+  background: url(../img/questionbg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -80px;
 }
 
 .question__heading {

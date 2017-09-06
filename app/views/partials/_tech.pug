@@ -2,18 +2,20 @@ section.tech
   .container
     .row
       .col-24.col-lg-12
-        .heading.tech__heading!=page.tech.heading
+        .heading.tech__heading!=page.tech.heading 
+  .container-fluid      
     .tech__slider
       each item, i in page.tech.slides
         .tech__item
-          .row
-            .col-24.col-lg-12.flex-lg-last
-              .tech__image
-                img.img-fluid(src!=item.img.src, alt!=item.img.alt)
-            .col-24.col-lg-12
-              .tech__box
-                .tech__number!=item.number
-                .tech__title!=item.title
-                .tech__text!=item.text
+          .container
+            .row
+              .col-24.col-lg-12.flex-lg-last
+                .tech__image
+                  img(src!=item.img.src, alt!=item.img.alt)
+              .col-24.col-lg-12
+                .tech__box
+                  .tech__number!=item.number
+                  .tech__title!=item.title
+                  .tech__text!=item.text
     .tech__arrows
       .tech__count 01 / 04              

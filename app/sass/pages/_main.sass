@@ -99,7 +99,10 @@ button
   .modal
     &__size
       width: 1000px 
-      max-width: none     
+      max-width: none    
+      .modal__close
+        right: -30px
+        top: -30px 
 .modal.show 
   display: flex !important
   align-items: center
@@ -432,7 +435,11 @@ button
     position: relative
     padding-left: 50px
     margin-bottom: 55px
+    font: 400 16px/20px $font-gotham
     text-align: left 
+    color: #635c52
+    &--span
+      font: 700 16px/20px $font-gotham
     img
       position: absolute
       left: -20px    
@@ -603,7 +610,10 @@ button
       &-prev
         left: 0
       &-next
-        right: 0  
+        right: 0 
+  &__image
+    img
+      max-width: 100%       
 +r(760)
   .tech
     padding: 200px 0
@@ -631,6 +641,11 @@ button
     padding: 200px 0 20px
     &__arrows
       bottom: 180px
+      left: 50%
+      margin-left: -585px  
+    &__image
+      img
+        max-width: none  
 +comment("people style")
 .people
   padding: 120px 0 20px
@@ -670,6 +685,8 @@ button
   background: url(../img/missionbg.png) no-repeat
   background-size: cover
   background-position: center top
+  position: relative
+  z-index: 25
   &__heading
     text-align: center
     margin-bottom: 30px
@@ -697,7 +714,6 @@ button
   .mission
     margin-top: -85px
     position: relative
-    z-index: 20
     &__heading
       text-align: left
       margin-bottom: 35px
@@ -721,6 +737,12 @@ button
 +comment("transfer style")   
 .transfer
   padding: 140px 0 120px
+  background: url(../img/transferbg.png) no-repeat
+  background-size: cover
+  background-position: center 
+  margin-top: -140px
+  position: relative
+  z-index: 20
   &__heading
     text-align: center
     margin-bottom: 30px 
@@ -756,7 +778,11 @@ button
         left: 0      
 +comment("section question style")
 .question
-  padding: 88px 0 72px
+  padding: 148px 0 72px
+  background: url(../img/questionbg.png) no-repeat
+  background-size: cover
+  background-position: center
+  margin-top: -80px
   &__heading
     margin-bottom: 50px
     text-align: center
