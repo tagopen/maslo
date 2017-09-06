@@ -1775,7 +1775,7 @@ button {
 @media only screen and (min-width: 992px) {
   .purchase {
     margin-top: -65px;
-    padding-bottom: 350px;
+    padding-bottom: 320px;
   }
   .purchase__heading {
     text-align: left;
