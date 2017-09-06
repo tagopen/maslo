@@ -347,7 +347,7 @@ button
       bottom: 0  
 +r(1200)
   .intro
-    padding: 160px 0 0
+    padding: 160px 0 85px
     &__heading
       text-align: left  
       &--sm
@@ -368,11 +368,24 @@ button
         left: 0
         opacity: 1
         visibility: visible    
-        transform: scale(1)
-        img
-          max-width: 100%
+        transform: scale(1)         
   .nav-tabs
     display: flex  
++r(1600)    
+  .intro
+    &__img
+      img
+        max-width: none
+      &.active
+        left: 0
+        opacity: 1
+        visibility: visible    
+        transform: scale(1)
+      &--1
+        &.active
+          img
+            height: auto 
+            max-width: none 
 +comment("purchase style") 
 .purchase
   padding: 100px 0 560px
@@ -463,6 +476,9 @@ button
       text-align: left    
     &__text
       text-align: left
+    &__image
+      position: relative
+      top: 20px  
 +comment("produce style")
 .produce 
   padding: 220px 0 120px
@@ -665,7 +681,7 @@ button
     text-align: center
     margin-bottom: 20px
   &__notify
-    font: 400 12px/16px  $font-gotham
+    font: 400 16px/20px  $font-gotham
     text-align: center
     margin-bottom: 30px !important
 +r(760)
@@ -769,6 +785,7 @@ button
       margin-bottom: 35px    
 +r(1200)
   .transfer
+    padding-top: 200px
     &__heading
       text-align: left
     &__text
@@ -836,7 +853,7 @@ button
     width: 100%
 .notify
   margin: 0
-  font: 400 12px/14px  $font-gotham
+  font: 400 16px/18px  $font-gotham
   +opacity(0.5)
   color: #615c53
   text-align: center
