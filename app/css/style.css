@@ -1698,7 +1698,7 @@ button {
 
 @media only screen and (min-width: 1200px) {
   .intro {
-    padding: 160px 0 0;
+    padding: 160px 0 85px;
   }
   .intro__heading {
     text-align: left;
@@ -1732,14 +1732,29 @@ button {
         -ms-transform: scale(1);
             transform: scale(1);
   }
-  .intro__img.active img {
-    max-width: 100%;
-  }
   .nav-tabs {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .intro__img img {
+    max-width: none;
+  }
+  .intro__img.active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .intro__img--1.active img {
+    height: auto;
+    max-width: none;
   }
 }
 
@@ -1798,13 +1813,16 @@ button {
 /* M A K E    S T Y L E                     */
 /* ---------------------------------------- */
 .make {
-  padding: 230px 0 50px;
-  background: url(../img/makebg.png) no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 250px 0 70px;
   margin-top: -180px;
   position: relative;
   z-index: 10;
+}
+
+.make__container {
+  background: url(../img/makebg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .make__heading {
@@ -1876,6 +1894,10 @@ button {
   }
   .make__text {
     text-align: left;
+  }
+  .make__image {
+    position: relative;
+    top: 20px;
   }
 }
 
@@ -2188,7 +2210,7 @@ button {
 }
 
 .people__notify {
-  font: 400 12px/16px "GothamPro", sans-serif;
+  font: 400 16px/20px "GothamPro", sans-serif;
   text-align: center;
   margin-bottom: 30px !important;
 }
@@ -2342,6 +2364,9 @@ button {
 }
 
 @media only screen and (min-width: 1200px) {
+  .transfer {
+    padding-top: 200px;
+  }
   .transfer__heading {
     text-align: left;
   }
@@ -2521,7 +2546,7 @@ button {
 
 .notify {
   margin: 0;
-  font: 400 12px/14px "GothamPro", sans-serif;
+  font: 400 16px/18px "GothamPro", sans-serif;
   opacity: 0.5;
   filter: alpha(opactiy=50);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
