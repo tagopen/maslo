@@ -1370,6 +1370,7 @@ button {
 
 .button {
   position: relative;
+  text-transform: uppercase;
 }
 
 .button:before {
@@ -1410,7 +1411,7 @@ button {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(126, 152, 39, 0.9)), to(rgba(156, 191, 41, 0.9)));
   background-image: -webkit-linear-gradient(bottom, rgba(126, 152, 39, 0.9) 0%, rgba(156, 191, 41, 0.9) 100%);
   background-image: linear-gradient(to top, rgba(126, 152, 39, 0.9) 0%, rgba(156, 191, 41, 0.9) 100%);
-  font: 400 16px/20px "amavick", sans-serif;
+  font: 700 16px/18px "GothamPro", sans-serif;
   color: #fff;
   text-align: center;
   white-space: normal;
@@ -1430,10 +1431,10 @@ button {
 
 @media only screen and (min-width: 1200px) {
   .button {
-    font: 400 18px/20px "amavick", sans-serif;
+    font: 700 18px/20px "GothamPro", sans-serif;
   }
   .button--green {
-    font: 400 18px/20px "amavick", sans-serif;
+    font: 700 18px/20px "GothamPro", sans-serif;
   }
 }
 
@@ -1644,7 +1645,7 @@ button {
 }
 
 .intro__btn {
-  font: 400 18px/18px "amavick", sans-serif;
+  font: 700 18px/18px "GothamPro", sans-serif;
   text-align: center;
   padding: 20px 30px;
   -webkit-border-radius: 30px !important;
@@ -1667,6 +1668,7 @@ button {
           box-shadow: 0 2px 20px #7e9a21, 0 1px 0 #6e8819;
   -webkit-border-radius: 30px;
           border-radius: 30px;
+  font: 700 18px/18px "GothamPro", sans-serif;
   border: 1px solid #b1e208 !important;
   background-color: #9cbf29;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(126, 152, 39, 0.9)), to(rgba(156, 191, 41, 0.9)));
