@@ -8,17 +8,13 @@ section.intro
         .intro__box
           ul.nav-tabs(role='tablist')
             .nav-item
-              a.nav-link.button.intro__btn.intro__btn--1.active(href='#tab1', role='tab', data-toggle='tab')!=page.intro.tabs.btn1 
+              a.nav-link.button.intro__btn.intro__btn--1.active!=page.intro.tabs.btn1 
             .nav-item
-              a.nav-link.button.intro__btn.intro__btn--2(href='#tab2', role='tab', data-toggle='tab')!=page.intro.tabs.btn2
-          // Tab panes
+              a.nav-link.button.intro__btn.intro__btn--2!=page.intro.tabs.btn2
           .tab-content
-            #tab1.tab-pane.in.active(role='tabpanel')
+            #tab1.tab-pane.in.active
               .intro__text!=page.intro.tabs.text1
               img.img-fluid.hidden-md-up(src!=page.intro.tabs.img1.src, alt!=page.intro.tabs.img1.alt)
-            #tab2.tab-pane.fade(role='tabpanel')
-              .intro__text!=page.intro.tabs.text1
-              img.img-fluid.hidden-md-up(src!=page.intro.tabs.img2.src, alt!=page.intro.tabs.img2.alt)
       .col-24.col-sm-18.offset-sm-3.col-md-12.offset-md-0.col-lg-9.col-xl-8.hidden-sm-down
         .intro__image 
           .intro__img.intro__img--1.active

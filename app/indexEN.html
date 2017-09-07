@@ -38,16 +38,16 @@
     <meta name="twitter:image" content="//img/logo/microformat.png"/>
     <!-- build:css css/bundle.min.css-->
     <!-- Fonts CSS-->
-    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Font-Awesome CSS-->
-    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <!-- Tooltip CSS-->
-    <link rel="stylesheet" href="../css/tooltipster.bundle.css">
-    <link rel="stylesheet" href="../css/tooltipster-sideTip-shadow.min.css">
+    <link rel="stylesheet" href="css/tooltipster.bundle.css">
+    <link rel="stylesheet" href="css/tooltipster-sideTip-shadow.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- endbuild-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
@@ -92,16 +92,12 @@
               <h2 class="heading intro__heading intro__heading--lg">Our oil extracting factory <span class="heading--span">Potoky</span> is dealing with the manufacturing of two basic types of output products:</h2>
               <div class="intro__box">
                 <ul class="nav-tabs" role="tablist">
-                  <div class="nav-item"><a class="nav-link button intro__btn intro__btn--1 active" href="#tab1" role="tab" data-toggle="tab">sunflower oil</a></div>
-                  <div class="nav-item"><a class="nav-link button intro__btn intro__btn--2" href="#tab2" role="tab" data-toggle="tab">high-protein sunflower meal</a></div>
+                  <div class="nav-item"><a class="nav-link button intro__btn intro__btn--1 active">sunflower oil</a></div>
+                  <div class="nav-item"><a class="nav-link button intro__btn intro__btn--2">high-protein sunflower meal</a></div>
                 </ul>
-                <!-- Tab panes-->
                 <div class="tab-content">
-                  <div class="tab-pane in active" id="tab1" role="tabpanel">
+                  <div class="tab-pane in active" id="tab1">
                     <div class="intro__text">We have reached a high level of production with modern equipment and latest technologies of low-temperature extraction. Sunflower seeds undergo maximum pressing and our oil turns to be extremely concentrated. The innovational equipment makes it possible to produce unique high protein sunflower meal which has no analogues in the world in its chemical composition.</div><img class="img-fluid hidden-md-up" src="img/intro1.png" alt="oil">
-                  </div>
-                  <div class="tab-pane fade" id="tab2" role="tabpanel">
-                    <div class="intro__text">We have reached a high level of production with modern equipment and latest technologies of low-temperature extraction. Sunflower seeds undergo maximum pressing and our oil turns to be extremely concentrated. The innovational equipment makes it possible to produce unique high protein sunflower meal which has no analogues in the world in its chemical composition.</div><img class="img-fluid hidden-md-up" src="img/intro2.svg" alt="meal">
                   </div>
                 </div>
               </div>
@@ -165,7 +161,7 @@
                       <div class="produce__title">The composition of high protein unique meal:</div>
                       <div class="produce__details"> 
                         <div class="row justify-content-center">
-                          <div class="col-24 col-md-18 col-lg-24">
+                          <div class="col-24">
                             <div class="row">
                               <div class="col-24 col-md-12 col-lg-10">
                                 <div class="produce__elem"><span class="produce__percent">46%</span> - <span class="produce__elem--span">protein</span></div>
@@ -191,7 +187,7 @@
                       <div class="produce__title">The composition of sunflower meal:</div>
                       <div class="produce__details"> 
                         <div class="row justify-content-center">
-                          <div class="col-24 col-md-18 col-lg-24">
+                          <div class="col-24">
                             <div class="row">
                               <div class="col-24 col-md-12">
                                 <div class="produce__elem"><span class="produce__percent">1,5-2%</span> - <span class="produce__elem--span">oil</span></div>
@@ -344,7 +340,7 @@
                 </div>
                 <div class="col-24 col-md-14 offset-md-5 offset-lg-0"> 
                   <div class="button-group">
-                    <button class="button button--size button--green" type="button" data-toggle="modal" data-target="#modal__produt">Join our team</button>
+                    <button class="button button--size button--green" type="button" data-toggle="modal" data-target="#modal__product">Join our team</button>
                   </div>
                 </div>
               </div>
@@ -403,9 +399,9 @@
             <div class="col-lg-12 hidden-md-down">
               <div class="transfer__photo"><img class="transfer__img" src="img/illustration.svg" alt="illustration"></div>
             </div>
-            <div class="col-24 col-md-16 offset-md-4 col-lg-12 offset-lg-0 text-center text-lg-left"><a class="transfer__link" data-toggle="modal" href="#modal__transfer">Find out more about the product storage</a>
+            <div class="col-24 col-md-16 offset-md-4 col-lg-12 offset-lg-0 text-center text-lg-left"><a class="transfer__link" data-toggle="modal" href="#modal__product">Find out more about the product storage</a>
               <div class="button-group text-center text-lg-left">
-                <button class="button button--size button--green" type="button" data-toggle="modal" data-target="#modal__communication">Transport cooperation</button>
+                <button class="button button--size button--green" type="button" data-toggle="modal" data-target="#modal__cooperation">Transport cooperation</button>
               </div>
             </div>
           </div>
@@ -549,48 +545,6 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="modal__transfer" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal__size">
-        <div class="modal-content modal__content">
-          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 27 27">
-              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z">  </path>
-            </svg>
-          </button>
-          <div class="row">
-            <div class="col-24 col-md-12">
-              <div class="modal__title">product storage</div>
-              <p class="modal__text">Sunflower and soya meals are kept in warehouses equipped with supply and exhaust ventilation systems. The rooms have sufficient air flow, are clean, dry, not infested by bread damaging insects, protected from the sunlight and heating. The meal produced is stored in bulk or in bags.</p>
-              <p class="modal__text">Sunflower oil is stored in special reservoirs designed for this purpose following all norms and rules of keeping food products. The tanks and reservoirs for keeping oil are cleaned in terms required by normative documents (not less than once per year).</p>
-            </div>
-            <div class="col-24 col-md-12">   
-              <div class="modal__title">Find out more about cooperation options with the oil extraction factory <span class="modal__title--span">«Потоки»</span></div>
-              <div class="modal__subheading modal__subheading--left">Please leave your contacts if you would like to offer us transport cooperation</div>
-              <form class="contact__form contactForm contactForm--modal" method="post" action="./mail/mail.php">
-                <div class="row justify-content-center">
-                  <div class="col-24">
-                    <div class="form-group contact-form__group">
-                      <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Enter your name" name="name" required>
-                    </div>
-                  </div>
-                  <div class="col-24">
-                    <div class="form-group contact-form__group">
-                      <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Enter your phone number" name="phone" required>
-                    </div>
-                  </div>
-                  <div class="col-24">   
-                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Ask us a question" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; File sending...">Send</button>
-                  </div>
-                  <div class="col-24 col-lg-16 col-xl-18">
-                    <p class="notify contact-form__notify modal__notify">We guarantee complete confidentiality of your data</p>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="modal fade" id="modal__product" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal__size">
         <div class="modal-content modal__content">
@@ -615,7 +569,7 @@
         <div class="modal-content modal__content">
           <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 27 27">
-              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z">  </path>
+              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z"> </path>
             </svg>
           </button>
           <div class="row justify-content-center">
@@ -640,48 +594,6 @@
                   </div>
                   <div class="col-24">   
                     <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Ask us a question" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; File sending...">Предложить возможность сотрудничества</button>
-                  </div>
-                  <div class="col-24 col-lg-16 col-xl-18">
-                    <p class="notify contact-form__notify modal__notify">We guarantee complete confidentiality of your data</p>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modal__form" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal__size modal__size--xs">
-        <div class="modal-content modal__content">
-          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 27 27">
-              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z">  </path>
-            </svg>
-          </button>
-          <div class="row">
-            <div class="col-24"> 
-              <div class="modal__title modal__title--center">Заполните форму<span class="modal__title--span"></span></div>
-              <div class="modal__subheading">и мы свяжемся с вами в течение 15 минут</div>
-              <form class="contact__form contactForm contactForm--modal" method="post" action="./mail/mail.php">
-                <div class="row justify-content-center">
-                  <div class="col-24">
-                    <div class="form-group contact-form__group">
-                      <input class="form-control form-control--full-size contact-form__input" type="text" placeholder="Enter your name" name="name" required>
-                    </div>
-                  </div>
-                  <div class="col-24">
-                    <div class="form-group contact-form__group">
-                      <input class="form-control form-control--full-size contact-form__input" type="tel" placeholder="Enter your phone number" name="phone" required>
-                    </div>
-                  </div>
-                  <div class="col-24">
-                    <div class="form-group contact-form__group">
-                      <input class="form-control form-control--full-size contact-form__input" type="email" placeholder="Enter your email address" name="email" required>
-                    </div>
-                  </div>
-                  <div class="col-24">   
-                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Ask us a question" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; File sending...">Send</button>
                   </div>
                   <div class="col-24 col-lg-16 col-xl-18">
                     <p class="notify contact-form__notify modal__notify">We guarantee complete confidentiality of your data</p>
@@ -744,24 +656,26 @@
     </div>
     <!-- build:js js/bundle.min.js-->
     <!-- Tether JavaScript-->
-    <script src="../js/tether.js"></script>
+    <script src="js/tether.js"></script>
     <!-- jQuery-->
-    <script src="../js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <!-- Bootstrap JavaScript-->
-    <script src="../js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
     <!-- Old browsers reject JavaScript-->
-    <script src="../js/jquery.reject.js"></script>
+    <script src="js/jquery.reject.js"></script>
     <!-- Tooltip JavaScript-->
-    <script src="../js/tooltipster.bundle.js"></script>
+    <script src="js/tooltipster.bundle.js"></script>
     <!-- Validator JavaScript-->
-    <script src="../js/validator.js"></script>
-    <script src="../js/contact_me.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- MatchHeight JavaScript-->
+    <script src="js/jquery.matchHeight.js">     </script>
     <!-- Select2 JavaScript-->
-    <script src="../js/select2.js"></script>
+    <script src="js/select2.js"></script>
     <!-- Slick-Slider JavaScript-->
-    <script src="../js/slick.js"></script>
+    <script src="js/slick.js"></script>
     <!-- Custom JavaScript-->
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
     <!-- endbuild-->
   </body>
 </html>

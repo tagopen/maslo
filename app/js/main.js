@@ -21,6 +21,11 @@
     });
   });
 
+  $(".intro__btn").click(function() {
+    $(".intro__btn").removeClass('active');
+    $(this).addClass('active');
+  });
+
   $(".intro__btn--1").click(function() {
     $(".intro__img").removeClass('active');
     $(".intro__img--1").addClass('active');
@@ -84,5 +89,6 @@
       }
     });
   });
+
 
 })(jQuery); // End of use strict

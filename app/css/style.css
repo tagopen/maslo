@@ -1214,6 +1214,10 @@ button {
   top: 15px;
 }
 
+.modal__close path {
+  fill: #635c52;
+}
+
 .modal__heading {
   font: 400 30px/34px "amavick", sans-serif;
   margin-bottom: 10px;
@@ -1300,6 +1304,9 @@ button {
   .modal__size .modal__close {
     right: -30px;
     top: -30px;
+  }
+  .modal__close path {
+    fill: #fff;
   }
 }
 
@@ -1645,6 +1652,7 @@ button {
   border: 2px solid #635c52 !important;
   color: #635c52;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .intro__btn:hover, .intro__btn:focus {
@@ -1971,6 +1979,7 @@ button {
   font: 400 16px/20px "GothamPro", sans-serif;
   color: #615c53;
   margin-bottom: 20px;
+  min-height: 200px;
 }
 
 .produce__title {
@@ -2016,6 +2025,9 @@ button {
   }
   .produce__item {
     display: inline-block;
+  }
+  .produce__text {
+    min-height: 100px;
   }
 }
 
