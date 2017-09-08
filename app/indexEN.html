@@ -464,11 +464,11 @@
         </div>
       </section>
       <section class="map">
-        <div class="container">
+        <div class="container map__container"><a class="map__cursor" data-toggle="modal" href="#modal__map"><i class="ic ic--cursor"></i><img src="img/cursor.svg" alt="Зум"></a>
           <div class="row justify-content-center justify-content-lg-end">
-            <div class="col-24 col-md-19 col-lg-12">
+            <div class="col-24 col-lg-12">
               <div class="bubble">
-                <div class="bubble__box">
+                <div class="bubble__box"><i class="ic ic--mapbg"></i>
                   <h2 class="heading bubble__heading">Contact us</h2>
                   <ul class="bubble__list">
                     <li class="bubble__item justify-content-lg-start">
@@ -492,17 +492,23 @@
             </div>
           </div>
         </div>
+        <div class="map__image hidden-lg-up"><img src="img/map.svg" alt="Карта"></div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-24 col-md-6">
-            <div class="logo footer__logo"><img class="hidden-md-up img-fluid" src="img/logo/logo.png" alt="Лого"><img class="hidden-sm-down img-fluid" src="img/logo/logo-horizontal.png" alt="Лого"></div>
-          </div>
-          <div class="col-24 col-md-11 col-xl-8 flex-last flex-md-unordered"><small class="copyright footer__copyright"><span class="copyright__text">Made cordially by the studio WELL DONE</span><img class="copyright__img" src="img/logo/well-done.png" alt="well-done"></small></div>
-          <div class="col-24 col-md-7 col-xl-4">
-            <div class="contact footer__contact"><a class="contact__link" data-toggle="modal" href="#modal__call"><i class="ic ic--phone"></i></a><a class="contact__text" href="tel/:0800123456"><span class="contact__text--span"> \ </span>0-800-12-34-56</a></div>
+        <div class="row justify-content-end">
+          <div class="col-24 col-lg-12 footer__col">
+            <div class="row justify-content-around align-items-center">
+              <div class="col-24 col-md-12 col-lg-10">
+                <div class="logo footer__logo"><img class="hidden-md-up img-fluid" src="img/logo/logo.png" alt="Лого"><img class="hidden-sm-down img-fluid" src="img/logo/logo-horizontal.png" alt="Лого"></div>
+              </div>
+              <div class="col-24 col-md-12 col-lg-12 flex-last flex-md-unordered"><small class="copyright footer__copyright">
+                  <div class="row">
+                    <div class="col-24 col-md-16"><span class="copyright__text">Made cordially by the studio WELL DONE</span></div>
+                    <div class="col-24 col-md-8"> <img class="copyright__img" src="img/logo/well-done.png" alt="well-done"></div>
+                  </div></small></div>
+            </div>
           </div>
         </div>
       </div>
@@ -574,8 +580,8 @@
           </button>
           <div class="row justify-content-center">
             <div class="col-24 col-lg-20"> 
-              <div class="modal__title modal__title--center">Узнайте о возможностях сотрудничества c МЭЗ «Потоки»</div>
-              <div class="modal__subheading">Оставьте свои контакты, если вас интересует совместная работа с нашим заводом</div>
+              <div class="modal__title modal__title--center">Find out more about cooperation opportunities with the oil extraction factory “Potoky”</div>
+              <div class="modal__subheading">Leave your contact details if you want to cooperate with our factory</div>
             </div>
           </div>
           <div class="row">
@@ -593,7 +599,7 @@
                     </div>
                   </div>
                   <div class="col-24">   
-                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Ask us a question" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; File sending...">Предложить возможность сотрудничества</button>
+                    <button class="button button--green contact-form__submit form-control form-control--full-size modal__btn" name="form" value="Ask us a question" type="submit" data-loading-text="&lt;i class='fa fa-circle-o-notch fa-spin'&gt;&lt;/i&gt; File sending...">Offer cooperation</button>
                   </div>
                   <div class="col-24 col-lg-16 col-xl-18">
                     <p class="notify contact-form__notify modal__notify">We guarantee complete confidentiality of your data</p>
@@ -601,6 +607,20 @@
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal__map" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal__map">
+        <div class="modal-content modal__map--content">
+          <button class="close modal__close" type="button" data-dismiss="modal" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 27 27">
+              <path fill="#fff" d="M13.85.38A13.07 13.07 0 0 0 .8 13.43c0 7.2 5.86 13.05 13.05 13.05a13.06 13.06 0 0 0 0-26.1zm0 23.86a10.82 10.82 0 0 1 0-21.62 10.82 10.82 0 0 1 0 21.62zM18.9 8.38a1.12 1.12 0 0 0-1.58 0l-3.47 3.47-3.47-3.47A1.12 1.12 0 1 0 8.8 9.96l3.47 3.47L8.8 16.9a1.11 1.11 0 0 0 0 1.58 1.12 1.12 0 0 0 1.58 0l3.47-3.47 3.47 3.47a1.1 1.1 0 0 0 1.58 0c.44-.44.44-1.14 0-1.58l-3.47-3.47 3.47-3.47c.44-.43.44-1.14 0-1.58z"> </path>
+            </svg>
+          </button>
+          <div class="modal__map--box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.014094672505!2d35.103794502023135!3d48.513794496188865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d95845c26a9251%3A0xc9df7f48c392951a!2z0LLRg9C70LjRhtGPINCR0LDQudC60LDQu9GM0YHRjNC60LAsIDkvMjEsINCU0L3RltC_0YDQvsyBLCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQ5MDAw!5e0!3m2!1sru!2sru!4v1504856977352" frameborder="0" style="border:0;" allowfullscreen> </iframe>
           </div>
         </div>
       </div>

@@ -1,16 +1,21 @@
 footer.footer
   .container
-    .row.justify-content-between.align-items-center
-      .col-24.col-md-6
-        .logo.footer__logo
-          img.hidden-md-up.img-fluid(src!=page.nav.logo.src, alt!=page.nav.logo.alt)
-          img.hidden-sm-down.img-fluid(src!=page.nav.logo2.src, alt!=page.nav.logo2.alt)
-      .col-24.col-md-11.col-xl-8.flex-last.flex-md-unordered
-        small.copyright.footer__copyright
-          span.copyright__text!= page.footer.copyright.text
-          img.copyright__img(src=page.footer.copyright.img.src, alt=page.footer.copyright.img.alt)
-      .col-24.col-md-7.col-xl-4
-        .contact.footer__contact
-          a.contact__link(data-toggle="modal", href="#modal__call")
-            i.ic.ic--phone
-          a.contact__text(href!=page.nav.contact.href)!=page.nav.contact.text
+    .row.justify-content-end
+      .col-24.col-lg-12.footer__col
+        .row.justify-content-around.align-items-center
+          .col-24.col-md-12.col-lg-10
+            .logo.footer__logo
+              img.hidden-md-up.img-fluid(src!=page.nav.logo.src, alt!=page.nav.logo.alt)
+              img.hidden-sm-down.img-fluid(src!=page.nav.logo2.src, alt!=page.nav.logo2.alt)
+          .col-24.col-md-12.col-lg-12.flex-last.flex-md-unordered
+            small.copyright.footer__copyright
+              .row
+                .col-24.col-md-16
+                  span.copyright__text!= page.footer.copyright.text
+                .col-24.col-md-8  
+                  img.copyright__img(src=page.footer.copyright.img.src, alt=page.footer.copyright.img.alt)
+          //- .col-24.col-md-7.col-xl-4
+          //-   .contact.footer__contact
+          //-     a.contact__link(data-toggle="modal", href="#modal__call")
+          //-       i.ic.ic--phone
+          //-     a.contact__text(href!=page.nav.contact.href)!=page.nav.contact.text

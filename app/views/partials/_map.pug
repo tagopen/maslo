@@ -1,9 +1,13 @@
 section.map
-  .container
+  .container.map__container
+    a.map__cursor(data-toggle="modal", href="#modal__map")
+      i.ic.ic--cursor
+      img(src="img/cursor.svg", alt="Зум")  
     .row.justify-content-center.justify-content-lg-end
-      .col-24.col-md-19.col-lg-12
+      .col-24.col-lg-12
         .bubble
           .bubble__box
+            i.ic.ic--mapbg
             h2.heading.bubble__heading!= page.map.bubble.heading
             ul.bubble__list
               each item in page.map.bubble.items
@@ -14,3 +18,5 @@ section.map
                     a.bubble__link(href=item.value.link.href)!= item.value.link.text
                   else
                     span.bubble__text!= item.value.text
+  .map__image.hidden-lg-up
+    img(src="img/map.svg", alt="Карта")                  
