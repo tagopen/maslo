@@ -1610,7 +1610,7 @@ button {
 
 @media only screen and (min-width: 760px) {
   .nav {
-    padding: 40px 0 50px;
+    padding: 30px 0;
   }
   .nav__box {
     text-align: left;
@@ -1660,7 +1660,7 @@ button {
     min-height: 800px;
   }
   .header__title {
-    font: 400 42px/50px "amavick", sans-serif;
+    font: 400 34px/50px "amavick", sans-serif;
   }
   .header__subtitle {
     font: 400 28px/30px "amavick", sans-serif;
@@ -1669,7 +1669,7 @@ button {
 
 @media only screen and (min-width: 992px) {
   .header__title {
-    font: 400 40px/60px "amavick", sans-serif;
+    font: 400 40px/50px "amavick", sans-serif;
   }
   .header__subtitle {
     font: 400 30px/32px "amavick", sans-serif;
@@ -2737,7 +2737,7 @@ button {
 .map__cursor {
   display: inline-block;
   position: absolute;
-  top: 400px;
+  top: 480px;
   left: 50%;
   cursor: pointer;
   margin: -57px 0 0 -57px;
@@ -2856,7 +2856,7 @@ button {
 
 @media only screen and (min-width: 760px) {
   .map__cursor {
-    top: 650px;
+    top: 750px;
   }
   .bubble {
     padding: 120px 0 100px;
@@ -2868,9 +2868,9 @@ button {
 
 @media only screen and (min-width: 992px) {
   .map {
-    background: #d3d3d3 url(../img/map.svg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: #d3d3d3 url(../img/map.jpg) no-repeat;
+    background-size: contain;
+    background-position: -20% top;
   }
   .map__cursor {
     top: 40%;
@@ -2891,6 +2891,15 @@ button {
   }
   .bubble__heading {
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .bubble:after {
+    left: -20px;
+  }
+  .map {
+    background-position: 0 top;
   }
 }
 
@@ -2968,5 +2977,11 @@ button {
     background: #f5f5f5;
     left: 0;
     top: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .footer__col:before {
+    left: -5px;
   }
 }
