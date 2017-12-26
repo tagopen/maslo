@@ -298,7 +298,7 @@ button
 +comment("header style")  
 .header
   min-height: 480px
-  padding-bottom: 400px
+  padding-bottom: 440px
   background: url(../img/headerbg.png) no-repeat
   background-size: cover
   background-position: center
@@ -333,7 +333,7 @@ button
       font: 400 30px/32px $font-amavick  
 +comment("intro style")      
 .intro
-  padding-top: 160px
+  padding-top: 120px
   margin-top: -70px
   background: url(../img/introbg.png) no-repeat
   background-size: cover
@@ -388,9 +388,9 @@ button
 .tab-pane
   text-align: center          
 .nav-tabs
-  display: block
+  display: none
   border: 0 
-  padding: 0     
+  padding: 0       
 +r(760)
   .intro
     padding: 160px 0 60px    
@@ -406,7 +406,9 @@ button
       text-align: left
     &__img
       top: auto
-      bottom: 0  
+      bottom: 0 
+  .nav-tabs
+    display: block     
 +r(1200)
   .intro
     padding: 160px 0 85px
@@ -483,7 +485,7 @@ button
       text-align: left 
 +comment("make style") 
 .make
-  padding: 250px 0 70px
+  padding: 250px 0 0
   margin-top: -180px
   position: relative
   z-index: 10
@@ -529,7 +531,10 @@ button
     &--2
       padding-left: 65px
       img
-        top: -10px                
+        top: -10px    
++r(768)
+  .make
+    padding-bottom: 70px                    
 +r(992)
   .make
     &__heading
@@ -543,7 +548,7 @@ button
       top: 20px  
 +comment("produce style")
 .produce 
-  padding: 220px 0 120px
+  padding: 170px 0 20px
   background: url(../img/producebg.png) no-repeat
   background-size: cover
   background-position: 70% top
@@ -595,6 +600,7 @@ button
 +r(760)
   .produce
     background-position: center
+    padding: 220px 0 120px
     &__item
       display: inline-block
     &__text
@@ -617,9 +623,9 @@ button
       padding-right: 15px  
 +comment("detail style")       
 .info
-  padding: 100px 0 50px
+  padding: 50px 0 50px
   &__heading
-    margin-bottom: 50px
+    margin-bottom: 25px
     text-align: center
   &__box
     text-align: center
@@ -765,7 +771,7 @@ button
       text-align: left  
 +comment("mission style")     
 .mission
-  padding: 150px 0 100px 
+  padding: 100px 0 
   background: url(../img/missionbg.png) no-repeat
   background-size: cover
   background-position: center top
@@ -794,6 +800,9 @@ button
       font: 400 16px/18px $font-gotham
       color: #615c53  
       text-align: center
++r(768)
+  .mission
+    padding: 150px 0 100px      
 +r(992)
   .mission
     margin-top: -85px
@@ -820,7 +829,7 @@ button
     margin-top: -100px    
 +comment("transfer style")   
 .transfer
-  padding: 140px 0 120px
+  padding: 140px 0 30px
   background: url(../img/transferbg.png) no-repeat
   background-size: cover
   background-position: center 
@@ -846,6 +855,7 @@ button
     margin-bottom: 20px
 +r(760)
   .transfer
+    padding: 140px 0 120px
     &__link
       margin-bottom: 35px    
 +r(1200)
@@ -863,7 +873,7 @@ button
         left: 0      
 +comment("section question style")
 .question
-  padding: 148px 0 72px
+  padding: 148px 0 22px
   background: url(../img/questionbg.png) no-repeat
   background-size: cover
   background-position: center
@@ -960,6 +970,9 @@ button
     border-radius: 35px 35px 0 0 
     box-shadow: 3px -4px 13px rgba(0, 0, 0, 0.15)
     border-bottom: 1px solid rgba(97, 92, 83, 0.9)
++r(768)
+  .question
+    padding: 148px 0 72px    
 +r(992)
   .notify
     text-align: left
@@ -988,7 +1001,7 @@ button
       margin: -10px 0 0 -10px
 .bubble
   position: relative
-  padding: 60px 0 40px
+  padding: 15px 0 40px
   position: relative
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2)
   text-align: center

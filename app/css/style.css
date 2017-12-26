@@ -1625,7 +1625,7 @@ button {
 /* ---------------------------------------- */
 .header {
   min-height: 480px;
-  padding-bottom: 400px;
+  padding-bottom: 440px;
   background: url(../img/headerbg.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -1680,7 +1680,7 @@ button {
 /* I N T R O    S T Y L E                   */
 /* ---------------------------------------- */
 .intro {
-  padding-top: 160px;
+  padding-top: 120px;
   margin-top: -70px;
   background: url(../img/introbg.png) no-repeat;
   background-size: cover;
@@ -1765,7 +1765,7 @@ button {
 }
 
 .nav-tabs {
-  display: block;
+  display: none;
   border: 0;
   padding: 0;
 }
@@ -1789,6 +1789,9 @@ button {
   .intro__img {
     top: auto;
     bottom: 0;
+  }
+  .nav-tabs {
+    display: block;
   }
 }
 
@@ -1909,7 +1912,7 @@ button {
 /* M A K E    S T Y L E                     */
 /* ---------------------------------------- */
 .make {
-  padding: 250px 0 70px;
+  padding: 250px 0 0;
   margin-top: -180px;
   position: relative;
   z-index: 10;
@@ -1981,6 +1984,12 @@ button {
   top: -10px;
 }
 
+@media only screen and (min-width: 768px) {
+  .make {
+    padding-bottom: 70px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .make__heading {
     text-align: left;
@@ -2001,7 +2010,7 @@ button {
 /* P R O D U C E    S T Y L E               */
 /* ---------------------------------------- */
 .produce {
-  padding: 220px 0 120px;
+  padding: 170px 0 20px;
   background: url(../img/producebg.png) no-repeat;
   background-size: cover;
   background-position: 70% top;
@@ -2077,6 +2086,7 @@ button {
 @media only screen and (min-width: 760px) {
   .produce {
     background-position: center;
+    padding: 220px 0 120px;
   }
   .produce__item {
     display: inline-block;
@@ -2115,11 +2125,11 @@ button {
 /* D E T A I L    S T Y L E                 */
 /* ---------------------------------------- */
 .info {
-  padding: 100px 0 50px;
+  padding: 50px 0 50px;
 }
 
 .info__heading {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -2342,7 +2352,7 @@ button {
 /* M I S S I O N    S T Y L E               */
 /* ---------------------------------------- */
 .mission {
-  padding: 150px 0 100px;
+  padding: 100px 0;
   background: url(../img/missionbg.png) no-repeat;
   background-size: cover;
   background-position: center top;
@@ -2384,6 +2394,12 @@ button {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .mission {
+    padding: 150px 0 100px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .mission {
     margin-top: -85px;
@@ -2423,7 +2439,7 @@ button {
 /* T R A N S F E R    S T Y L E             */
 /* ---------------------------------------- */
 .transfer {
-  padding: 140px 0 120px;
+  padding: 140px 0 30px;
   background: url(../img/transferbg.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -2458,6 +2474,9 @@ button {
 }
 
 @media only screen and (min-width: 760px) {
+  .transfer {
+    padding: 140px 0 120px;
+  }
   .transfer__link {
     margin-bottom: 35px;
   }
@@ -2487,7 +2506,7 @@ button {
 /* S E C T I O N    Q U E S T I O N    S T Y L E  */
 /* ---------------------------------------------- */
 .question {
-  padding: 148px 0 72px;
+  padding: 148px 0 22px;
   background: url(../img/questionbg.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -2711,6 +2730,12 @@ button {
   border-bottom: 1px solid rgba(97, 92, 83, 0.9);
 }
 
+@media only screen and (min-width: 768px) {
+  .question {
+    padding: 148px 0 72px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .notify {
     text-align: left;
@@ -2752,7 +2777,7 @@ button {
 
 .bubble {
   position: relative;
-  padding: 60px 0 40px;
+  padding: 15px 0 40px;
   position: relative;
   -webkit-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
