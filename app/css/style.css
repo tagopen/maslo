@@ -1861,11 +1861,11 @@ button {
 /* P U R C H A S E    S T Y L E             */
 /* ---------------------------------------- */
 .purchase {
-  padding: 100px 0 560px;
-  background: url(../img/purchasebg.png) no-repeat;
+  padding: 100px 0 260px;
+  background: url(../img/purchasebg320.png) no-repeat;
   background-size: cover;
-  background-position: 33% center;
-  margin-top: -55px;
+  background-position: bottom center;
+  margin-top: -25px;
   position: relative;
   z-index: 25;
 }
@@ -1888,10 +1888,19 @@ button {
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 480px) {
+  .purchase {
+    padding-bottom: 300px;
+  }
+}
+
 @media only screen and (min-width: 760px) {
   .purchase {
     padding-top: 180px;
     margin-top: -150px;
+    background: url(../img/purchasebg.png) no-repeat;
+    background-size: cover;
+    background-position: 33% center;
   }
 }
 

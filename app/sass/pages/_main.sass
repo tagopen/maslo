@@ -452,11 +452,11 @@ button
             max-width: none 
 +comment("purchase style") 
 .purchase
-  padding: 100px 0 560px
-  background: url(../img/purchasebg.png) no-repeat
+  padding: 100px 0 260px
+  background: url(../img/purchasebg320.png) no-repeat
   background-size: cover
-  background-position: 33% center
-  margin-top: -55px
+  background-position: bottom center
+  margin-top: -25px
   position: relative
   z-index: 25
   &__heading
@@ -471,10 +471,16 @@ button
       font: 700 16px/20px $font-gotham
       color: #9cbf29
       text-decoration: underline
++r(480)
+  .purchase
+    padding-bottom: 300px 
 +r(760)
   .purchase
     padding-top: 180px
-    margin-top: -150px             
+    margin-top: -150px         
+    background: url(../img/purchasebg.png) no-repeat
+    background-size: cover
+    background-position: 33% center    
 +r(992)
   .purchase
     margin-top: -65px
