@@ -1861,7 +1861,7 @@ button {
 /* P U R C H A S E    S T Y L E             */
 /* ---------------------------------------- */
 .purchase {
-  padding: 100px 0 260px;
+  padding: 50px 0 260px;
   background: url(../img/purchasebg320.png) no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -2134,7 +2134,7 @@ button {
 /* D E T A I L    S T Y L E                 */
 /* ---------------------------------------- */
 .info {
-  padding: 50px 0 50px;
+  padding: 50px 0 0;
 }
 
 .info__heading {
@@ -2168,7 +2168,7 @@ button {
 
 @media only screen and (min-width: 760px) {
   .info {
-    padding-top: 240px;
+    padding: 240px 0 50px;
     background: url(../img/infobg.png) no-repeat;
     background-size: cover;
     background-position: center 200px;
@@ -2193,7 +2193,7 @@ button {
 /* T E C H    S T Y L E                     */
 /* ---------------------------------------- */
 .tech {
-  padding: 150px 0 120px;
+  padding: 100px 0 120px;
   background: url(../img/techbg.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -2309,7 +2309,7 @@ button {
 /* P E O P L E    S T Y L E                 */
 /* ---------------------------------------- */
 .people {
-  padding: 120px 0 20px;
+  padding: 60px 0 20px;
   background: url(../img/peoplebg.png) no-repeat;
   background-size: cover;
   background-position: center;
@@ -2336,6 +2336,7 @@ button {
 
 @media only screen and (min-width: 760px) {
   .people {
+    padding-top: 120px;
     padding-bottom: 40px;
     margin-top: -65px;
   }
@@ -2361,10 +2362,10 @@ button {
 /* M I S S I O N    S T Y L E               */
 /* ---------------------------------------- */
 .mission {
-  padding: 100px 0;
+  padding: 50px 0 100px;
   background: url(../img/missionbg.png) no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: center -50px;
   position: relative;
   z-index: 25;
 }
@@ -2406,6 +2407,7 @@ button {
 @media only screen and (min-width: 768px) {
   .mission {
     padding: 150px 0 100px;
+    background-position: center top;
   }
 }
 
