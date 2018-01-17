@@ -2883,6 +2883,7 @@ button {
 .bubble__text {
   font: 400 16px/18px "GothamPro", sans-serif;
   color: #fff;
+  text-align: left;
 }
 
 .bubble__link {
